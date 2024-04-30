@@ -1,14 +1,33 @@
-# Welcome to my Portfolio Repository!
+# Portfolio
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-apodvin.fr-blueviolet)](https://apodvin.fr)
+This template should help get you started developing with Vue 3 in Vite.
 
-Welcome to my GitHub repository! This is where I showcase my projects, experiences, and passions. Feel free to explore the code behind the magic and get in touch if you're interested in collaboration or have any questions.
+## Recommended IDE Setup
 
-## About Me
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-I'm a versatile developer specializing in web and mobile applications. I'm passionate about leveraging technology to create innovative solutions and delightful user experiences. You can learn more about me and my work on my [portfolio website](https://apodvin.fr).
+## Type Support for `.vue` Imports in TS
 
-## Get in Touch
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-- Email: [contact@apodvin.fr](mailto:contact@apodvin.fr)
-- Portfolio: [apodvin.fr](https://apodvin.fr)
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```

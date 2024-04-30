@@ -1,0 +1,37 @@
+<script setup lang="ts">
+import { Vue3Lottie } from 'vue3-lottie';
+
+</script>
+
+<template>
+  <div class="not-found">
+    <h1>404</h1>
+    <h3>{{ $t('404.title') }}</h3>
+    <p>{{ $t('404.message') }}</p>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 10rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+    margin-bottom: 5dvh;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+</style>

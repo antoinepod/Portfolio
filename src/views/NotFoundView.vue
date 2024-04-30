@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Vue3Lottie } from 'vue3-lottie';
-
 </script>
 
 <template>
@@ -19,7 +17,6 @@ import { Vue3Lottie } from 'vue3-lottie';
   align-items: center;
   font-weight: normal;
   text-align: center;
-  padding: 2rem;
 
   h1 {
     font-size: 8rem;

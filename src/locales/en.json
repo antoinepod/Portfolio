@@ -5,6 +5,11 @@
   },
   "hello-world": "Hello, world!",
   "welcome": "Welcome to our application.",
+  "home": {
+    "title": "Home",
+    "presentation-title": "Hi, I'm Antoine Podvin",
+    "presentation-subtitle": "I'm a full-stack and mobile developer with a passion for creating beautiful and functional applications."
+  },
   "about": {
     "title": "About"
   },

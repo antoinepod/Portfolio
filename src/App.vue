@@ -17,6 +17,7 @@ import Header from '@/components/Header.vue'
   font-weight: normal;
   height: 100dvh;
   max-width: 100dvw;
+  padding: 0 1rem;
   font-family: 'Product Sans';
   transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out, fill 0.8s ease-in-out, stroke 0.8s ease-in-out, border-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out, text-shadow 0.8s ease-in-out;
   background-color: var(--color-background);
@@ -29,6 +30,7 @@ import Header from '@/components/Header.vue'
   .router-view {
     min-height: calc(100dvh - 7.5rem);
     z-index: 1 !important;
+    padding: 1rem 0;
   }
 }
 </style>

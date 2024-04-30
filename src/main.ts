@@ -1,5 +1,3 @@
-import './assets/main.css'
-
 import { createApp, type Component, type ComponentPublicInstance } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -11,6 +9,8 @@ import 'bootstrap';
 
 import i18n from './i18n'
 import { FontAwesomeIcon } from './font-awesome'
+
+import './assets/main.css'
 
 const app = createApp(App);
 

@@ -2,9 +2,13 @@
 </script>
 
 <template>
-  <main>
+  <div class="home">
     <h1>Home</h1>
-  </main>
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.home {
+  min-height: 200vh !important;
+}
+</style>

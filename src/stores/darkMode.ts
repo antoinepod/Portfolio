@@ -23,7 +23,10 @@ export const useDarkModeStore = defineStore('darkMode', () => {
     setMode(mode.value);
   };
 
-  const isDark = computed(() => mode.value === 'dark');
+  const isDark = computed(() => {
+    document.documentElement.setAttribute("data-theme", mode.value);
+    return mode.value === 'dark';
+  });
 
   const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
   mediaQueryList.addEventListener('change', () => {

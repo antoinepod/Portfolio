@@ -5,11 +5,13 @@ import { RouterLink } from 'vue-router'
 import router from '@/router';
 
 import { useDarkModeStore } from '@/stores/darkMode';
+import { useWindowStore } from '@/stores/windowStore';
 import { changeLang } from '@/i18n';
 
 import IconSwitchAnimation from '@/components/IconSwitchAnimation.vue';
 
 const darkModeStore = useDarkModeStore();
+const windowStore = useWindowStore();
 
 const showMenu: Ref<boolean> = ref(false);
 
@@ -31,7 +33,7 @@ router.beforeResolve((to, from, next) => {
 <template>
   <button ref="collapseButton" hidden data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Collapse Menu</button>
   <header>
-    <div class="header-container">
+    <div :class="'header-container' + (windowStore.isMobile ? ' fixed-bottom' : '')">
       <nav class="navbar navbar-expand-md">
         <RouterLink class="title" to="/">Antoine Podvin</RouterLink>
         <IconSwitchAnimation class="menu-icon navbar-toggler" :value="showMenu" icon_true="times"
@@ -60,20 +62,14 @@ router.beforeResolve((to, from, next) => {
 <style scoped lang="scss">
 .header-container {
   margin: auto;
-  margin-top: 2rem;
-  padding: 1rem;
+  margin: 1.5rem auto;
+  padding: 0.5rem;
   border-radius: 40px;
   min-width: 45rem;
   width: 50dvw;
-  min-height: 8.5dvh;
-  transition: min-height 0.8s ease-in-out;
   background-color: var(--color-background);
 
-  &.mobile-menu {
-    min-height: 30vh;
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 90dvw;
     min-width: unset;
   }
@@ -133,7 +129,7 @@ router.beforeResolve((to, from, next) => {
       align-items: center;
       margin-left: 10%;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin: 0;
         margin-top: 1rem;
         flex-direction: row;
@@ -146,7 +142,7 @@ router.beforeResolve((to, from, next) => {
       justify-content: space-between;
       align-items: center;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin: auto;
         flex-direction: column;
         align-items: flex-start;
@@ -167,7 +163,7 @@ router.beforeResolve((to, from, next) => {
         width: 2rem;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         flex-direction: column-reverse;
 
         &>* {

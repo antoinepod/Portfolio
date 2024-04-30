@@ -1,15 +1,10 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import { computed } from 'vue'
-import { useDarkModeStore } from '@/stores/darkMode'
 import Header from '@/components/Header.vue'
-
-const darkModeStore = useDarkModeStore();
-const isDark = computed(() => darkModeStore.mode);
 </script>
 
 <template>
-  <div :class="'main-container ' + isDark">
+  <div :class="'main-container'">
     <Header class="header"></Header>
     <RouterView class="router-view" />
   </div>
@@ -21,19 +16,18 @@ const isDark = computed(() => darkModeStore.mode);
   flex-direction: column;
   font-weight: normal;
   height: 100dvh;
-  width: 100dvw;
+  max-width: 100dvw;
   font-family: 'Product Sans';
   transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out, fill 0.8s ease-in-out, stroke 0.8s ease-in-out, border-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out, text-shadow 0.8s ease-in-out;
   background-color: var(--color-background);
   color: var(--color-text);
 
   .header {
-    height: 15dvh;
     z-index: 2 !important;
   }
 
   .router-view {
-    min-height: 85dvh;
+    min-height: calc(100dvh - 7.5rem);
     z-index: 1 !important;
   }
 }

@@ -22,16 +22,16 @@ import { Vue3Lottie } from 'vue3-lottie';
   padding: 2rem;
 
   h1 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 5dvh;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 </style>

@@ -43,14 +43,14 @@ const props = defineProps<{
     }
 
     100% {
-      transform: rotate(180deg);
+      transform: rotate(90deg);
       opacity: 0;
     }
   }
 
   @keyframes spin-in {
     0% {
-      transform: rotate(-180deg);
+      transform: rotate(90deg);
       opacity: 0;
     }
 

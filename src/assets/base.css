@@ -71,24 +71,24 @@
 
 @font-face {
   font-family: 'Product Sans';
-  src: url('fonts/ProductSans-Regular.ttf') format('truetype');
+  src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Product Sans';
-  src: url('fonts/ProductSans-Bold.ttf') format('truetype');
+  src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Product Sans';
-  src: url('fonts/ProductSans-Italic.ttf') format('truetype');
+  src: url('/fonts/ProductSans-Italic.ttf') format('truetype');
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Product Sans';
-  src: url('fonts/ProductSans-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/ProductSans-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }

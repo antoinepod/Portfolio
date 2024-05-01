@@ -6,7 +6,8 @@ import {
   faSun,
   faMoon,
   faBars,
-  faXmark
+  faXmark,
+  faCircleInfo
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -14,7 +15,8 @@ library.add(
   faSun,
   faMoon,
   faBars,
-  faXmark
+  faXmark,
+  faCircleInfo
 )
 
 

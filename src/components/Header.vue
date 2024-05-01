@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { onUpdated, ref, type Ref } from 'vue';
-import { RouterLink } from 'vue-router'
+import { ref, type Ref } from 'vue';
+import AnimatedRouterLink from '@/components/AnimatedRouterLink.vue';
 
 import router from '@/router';
 
@@ -35,15 +35,15 @@ router.beforeResolve((to, from, next) => {
   <header>
     <div :class="'header-container' + (windowStore.isMobile ? ' fixed-bottom' : '')">
       <nav class="navbar navbar-expand-md">
-        <RouterLink class="title" to="/">Antoine Podvin</RouterLink>
-        <IconSwitchAnimation class="menu-icon navbar-toggler" :value="showMenu" icon_true="times"
-          icon_false="bars" @click="toggleMenu" />
+        <AnimatedRouterLink class="title" to="/">Antoine Podvin</AnimatedRouterLink>
+        <IconSwitchAnimation class="menu-icon navbar-toggler" :value="showMenu" icon_true="times" icon_false="bars"
+          @click="toggleMenu" />
         <div ref="collapseMenu" class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <div class="links" @click="">
-              <RouterLink to="/about">{{ $t('about.title') }}</RouterLink>
-              <RouterLink to="/projects">{{ $t('projects.title') }}</RouterLink>
-              <RouterLink to="/contact">{{ $t('contact.title') }}</RouterLink>
+            <div class="links">
+              <AnimatedRouterLink to="/about">{{ $t('about.title') }}</AnimatedRouterLink>
+              <AnimatedRouterLink to="/projects">{{ $t('projects.title') }}</AnimatedRouterLink>
+              <AnimatedRouterLink to="/contact">{{ $t('contact.title') }}</AnimatedRouterLink>
             </div>
             <div class="icons">
               <font-awesome-icon class="font-awesome" :icon="useDarkModeStore().isDark ? 'sun' : 'moon'"
@@ -86,34 +86,7 @@ router.beforeResolve((to, from, next) => {
     .title {
       font-weight: bold;
       text-decoration: none;
-    }
-
-    a {
-      color: var(--color-text);
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      text-decoration: none;
-
-      &::after {
-        content: '';
-        position: absolute;
-        border-radius: 20px;
-        height: 2px;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        margin-left: 0;
-        transform: scaleX(0);
-        background-color: currentColor;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
+      color: var(--color-heading);
     }
 
     .menu-icon {
@@ -134,41 +107,45 @@ router.beforeResolve((to, from, next) => {
         margin-top: 1rem;
         flex-direction: row;
       }
-    }
 
-    .links {
-      width: 70%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      .links {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-      @media screen and (max-width: 767px) {
-        margin: auto;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
+        @media screen and (max-width: 767px) {
+          margin: auto;
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
-    .icons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      &>* {
-        cursor: pointer;
-        margin: 0 0.8rem;
+        &>* {
+          color: var(--color-heading);
+        }
       }
 
-      img {
-        width: 2rem;
-      }
-
-      @media screen and (max-width: 767px) {
-        flex-direction: column-reverse;
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         &>* {
           cursor: pointer;
-          margin: 1rem;
+          margin: 0 0.8rem;
+        }
+
+        img {
+          width: 2rem;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column-reverse;
+
+          &>* {
+            cursor: pointer;
+            margin: 1rem;
+          }
         }
       }
     }

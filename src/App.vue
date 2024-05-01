@@ -15,7 +15,7 @@ import Header from '@/components/Header.vue'
   display: flex;
   flex-direction: column;
   font-weight: normal;
-  height: 100dvh;
+  min-height: 100dvh;
   max-width: 100dvw;
   padding: 0 1rem;
   font-family: 'Product Sans';
@@ -28,9 +28,13 @@ import Header from '@/components/Header.vue'
   }
 
   .router-view {
-    min-height: calc(100dvh - 7.5rem);
     z-index: 1 !important;
-    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 2rem;
+      padding-bottom: 7.5rem;
+    }
   }
 }
 </style>

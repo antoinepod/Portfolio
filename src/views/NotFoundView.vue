@@ -13,22 +13,11 @@
 .not-found {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: normal;
   text-align: center;
-
-  h1 {
-    font-size: 8rem;
-  }
+  margin: auto;
 
   h3 {
-    font-size: 3rem;
     margin-bottom: 5dvh;
-  }
-
-  p {
-    font-size: 1.5rem;
   }
 }
 </style>

@@ -1,17 +1,30 @@
 {
+  "buttons": {
+    "view-more": "Voir plus"
+  },
   "404": {
     "title": "Page non trouvée",
     "message": "Désolé, la page que vous recherchez n'existe pas."
   },
-  "hello-world": "Bonjour, le monde!",
-  "welcome": "Bienvenue sur notre application.",
   "home": {
     "title": "Accueil",
-    "presentation-title": "Salut, moi c'est Antoine Podvin",
-    "presentation-subtitle": "Je suis un développeur full-stack et mobile passionné par la création et le design d'applications."
+    "presentation": {
+      "title": "Salut, moi c'est Antoine",
+      "subtitle": "Développeur full-stack et mobile passionné par la création et le design d'applications"
+    },
+    "welcome-to-my-portfolio": "Bienvenue sur mon portfolio ! <br> Ici, vous pourrez en apprendre plus sur moi et mes projets.",
+    "about-me": {
+      "title": "À propos de moi",
+      "description": "Je suis actuellement en 5ème année à Epitech et passionné par le développement logiciel. J'ai de l'expérience dans un large éventail de technologies et de langages de programmation, et je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer."
+    },
+    "projects": {
+      "title": "Mes projets",
+      "description": "Si vous souhaitez découvrir mes réalisations, jetez un œil à mes projets ci-dessous. J'ai travaillé sur une variété de projets, incluant des applications web, mobiles et des jeux. Je suis constamment à la recherche de nouveaux défis, donc si vous avez une idée de projet, n'hésitez pas à me contacter."
+    }
   },
   "about": {
-    "title": "À propos"
+    "title": "À propos",
+    "description": "Ceci est la page à propos."
   },
   "projects": {
     "title": "Projets"

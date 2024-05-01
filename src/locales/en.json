@@ -1,17 +1,30 @@
 {
+  "buttons": {
+    "view-more": "View more"
+  },
   "404": {
     "title": "Page not found",
     "message": "The page you are looking for does not exist."
   },
-  "hello-world": "Hello, world!",
-  "welcome": "Welcome to our application.",
   "home": {
     "title": "Home",
-    "presentation-title": "Hi, I'm Antoine Podvin",
-    "presentation-subtitle": "I'm a full-stack and mobile developer with a passion for creating beautiful and functional applications."
+    "presentation": {
+      "title": "Hi, I'm Antoine",
+      "subtitle": "Full-stack and mobile developer with a passion for creating beautiful and functional applications"
+    },
+    "welcome-to-my-portfolio": "Welcome to my portfolio! <br> Here you will be able to learn more about me and my projects.",
+    "about-me": {
+      "title": "About me",
+      "description": "I am currently a 5th year student at Epitech and I am passionate about software development. I have experience in a wide range of technologies and programming languages, and I am always looking for new challenges and opportunities to learn and grow."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "If you are interested in seeing some of my work, you can check out my projects below. I have worked on a variety of projects, including web applications, mobile applications, and games. I am always looking for new projects to work on, so if you have an idea for a project, feel free to reach out to me."
+    }
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "description": "This is an about page."
   },
   "projects": {
     "title": "Projects"

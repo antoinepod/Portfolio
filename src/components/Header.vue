@@ -61,13 +61,20 @@ router.beforeResolve((to, from, next) => {
 
 <style scoped lang="scss">
 .header-container {
-  margin: auto;
+  z-index: 2;
   margin: 1.5rem auto;
   padding: 0.5rem;
   border-radius: 40px;
   min-width: 45rem;
   width: 50dvw;
   background-color: var(--color-background);
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media screen and (max-width: 767px) {
     width: 90dvw;

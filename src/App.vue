@@ -4,7 +4,7 @@ import Header from '@/components/Header.vue'
 </script>
 
 <template>
-  <div :class="'main-container'">
+  <div class="main-container">
     <Header class="header"></Header>
     <RouterView class="router-view" />
   </div>
@@ -23,17 +23,12 @@ import Header from '@/components/Header.vue'
   background-color: var(--color-background);
   color: var(--color-text);
 
-  .header {
-    z-index: 2 !important;
-  }
-
   .router-view {
     z-index: 1 !important;
-    padding-bottom: 1.5rem;
+    padding: 7.5rem 0 1.5rem 0;
 
     @media screen and (max-width: 767px) {
-      padding-top: 2rem;
-      padding-bottom: 7.5rem;
+      padding: 2rem 0 7.5rem 0;
     }
   }
 }

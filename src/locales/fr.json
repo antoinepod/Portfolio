@@ -9,7 +9,7 @@
   "home": {
     "title": "Accueil",
     "presentation": {
-      "title": "Salut, moi c'est Antoine",
+      "title": "Hi, I'm Antoine",
       "subtitle": "Développeur full-stack et mobile passionné par la création et le design d'applications"
     },
     "welcome-to-my-portfolio": "Bienvenue sur mon portfolio ! <br> Ici, vous pourrez en apprendre plus sur moi et mes projets.",
@@ -30,6 +30,23 @@
     "title": "Projets"
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "description": "Ceci est la page de contact.",
+    "email": {
+      "title": "Envoyez-moi un email",
+      "description": "Si vous souhaitez me contacter, vous pouvez m'envoyer un email à l'adresse suivante :",
+      "copy-email": "Copier l'email",
+      "email-copied": "Email copié !"
+    },
+    "phone": {
+      "title": "Appelez-moi",
+      "description": "Si vous préférez me contacter par téléphone, vous pouvez m'appeler au numéro suivant :",
+      "copy-phone": "Copier le numéro",
+      "phone-copied": "Numéro copié !"
+    },
+    "socials": {
+      "title": "Réseaux sociaux",
+      "description": "Vous pouvez également me retrouver sur les réseaux sociaux en cliquant sur les icônes ci-dessous :"
+    }
   }
 }

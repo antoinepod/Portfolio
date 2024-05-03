@@ -21,4 +21,12 @@ export const changeLang = (lang: "fr" | "en") => {
   window.localStorage.setItem('locale', lang);
 }
 
+export const toogleLang = () => {
+  changeLang(i18n.global.locale.value === 'fr' ? 'en' : 'fr');
+}
+
+export const getLang = () => {
+  return i18n.global.locale.value;
+}
+
 export default i18n;

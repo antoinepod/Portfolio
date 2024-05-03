@@ -30,6 +30,23 @@
     "title": "Projects"
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "description": "This is a contact page.",
+    "email": {
+      "title": "Send me an email",
+      "description": "If you would like to get in touch with me, you can send me an email at the following address:",
+      "copy-email": "Copy email",
+      "email-copied": "Email copied!"
+    },
+    "phone": {
+      "title": "Call me",
+      "description": "You can also give me a call at the following number:",
+      "copy-phone": "Copy phone number",
+      "phone-copied": "Phone number copied!"
+    },
+    "socials": {
+      "title": "Social media",
+      "description": "You can also find me on social media by clicking on the icon below:"
+    }
   }
 }

@@ -26,6 +26,11 @@ const props = defineProps<{
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-0.1rem);
+    }
   }
 
   .spin-enter-active {

@@ -46,11 +46,11 @@ router.beforeResolve((to, from, next) => {
               <AnimatedRouterLink to="/contact">{{ $t('contact.title') }}</AnimatedRouterLink>
             </div>
             <div class="icons">
-              <font-awesome-icon class="font-awesome" :icon="useDarkModeStore().isDark ? 'sun' : 'moon'"
-                @click="darkModeStore.toggleDarkMode()" />
-              <img v-if="$i18n.locale === 'fr'" src="@/assets/images/flags/en.svg" alt="English flag"
+              <IconSwitchAnimation class="font-awesome" :value="useDarkModeStore().isDark" icon_true="sun"
+                icon_false="moon" @click="darkModeStore.toggleDarkMode()" />
+              <img class="flag" v-if="$i18n.locale === 'fr'" src="@/assets/images/flags/en.svg" alt="English flag"
                 @click="changeLang('en')" />
-              <img v-else src="@/assets/images/flags/fr.svg" alt="French flag" @click="changeLang('fr')" />
+              <img class="flag" v-else src="@/assets/images/flags/fr.svg" alt="French flag" @click="changeLang('fr')" />
             </div>
           </div>
         </div>
@@ -144,6 +144,15 @@ router.beforeResolve((to, from, next) => {
 
         img {
           width: 2rem;
+        }
+
+        .flag {
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: translateY(-0.1rem);
+            box-shadow: 0px 0px 5px 2px var(--color-border);
+          }
         }
 
         @media screen and (max-width: 767px) {

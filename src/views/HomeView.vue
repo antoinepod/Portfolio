@@ -57,6 +57,7 @@ import AnimatedRouterLink from '@/components/AnimatedRouterLink.vue';
 
     .title-text {
       width: 33dvw;
+      text-align: left;
 
       h4 {
         margin: 2rem 0;

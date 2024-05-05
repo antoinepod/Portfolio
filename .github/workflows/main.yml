@@ -1,0 +1,39 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📦 Setup Node 18
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: 🔨 Build Project
+      id: build
+      run: |
+        npm ci
+        npm run build
+
+    - name: ✅ Build successful
+      if: steps.build.outcome == 'success'
+      run: echo "Build successful"
+
+    - name: 🚀 Deploy to FTP server
+      id: ftp-deploy
+      if: github.ref == 'refs/heads/main'
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.ftp_url }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: dist/
+        server-dir: www/
+    
+    - name: ✅ Deployment successful
+      if: steps.ftp-deploy.outcome == 'success'
+      run: echo "Successfully deployed to https://www.antoine-podvin.fr"

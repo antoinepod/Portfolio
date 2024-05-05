@@ -4,7 +4,8 @@
   },
   "404": {
     "title": "Page not found",
-    "message": "The page you are looking for does not exist."
+    "message": "The page you are looking for does not exist.",
+    "back-to-home": "Back to home"
   },
   "home": {
     "title": "Home",
@@ -24,7 +25,83 @@
   },
   "about": {
     "title": "About",
-    "description": "This is an about page."
+    "title-full": "About me",
+    "messages": [
+      {
+        "content": "Hello!",
+        "from": "user"
+      },
+      {
+        "content": "Who are you?",
+        "from": "user"
+      },
+      {
+        "content": "Hello!",
+        "from": "me"
+      },
+      {
+        "content": "My name is Antoine, I'm a student in Lille 🇫🇷",
+        "from": "me"
+      },
+      {
+        "content": "What and where do you study?",
+        "from": "user"
+      },
+      {
+        "content": "I'm currently a 5th year student at Epitech Lille, preparing to graduate as a Software Engineer Expert.",
+        "from": "me"
+      },
+      {
+        "content": "Sounds cool! What are your skills?",
+        "from": "user"
+      },
+      {
+        "content": "I'm passionate about Mobile, Full Stack, Front-end, Back-end development and UI/UX Design.",
+        "from": "me"
+      },
+      {
+        "content": "Nice! What kind of projects have you worked on?",
+        "from": "user"
+      },
+      {
+        "content": "I have worked on a variety of projects, including web applications, mobile applications, and games.",
+        "from": "me"
+      },
+      {
+        "content": "I'm always looking for new challenges, so if you have a project idea, feel free to reach out!",
+        "from": "me"
+      },
+      {
+        "content": "Okay! What are your career goals?",
+        "from": "user"
+      },
+      {
+        "content": "I want to work in an innovative and dynamic company, where I can continue to learn and grow as a developer.",
+        "from": "me"
+      },
+      {
+        "content": "Do you have any hobbies appart from coding?",
+        "from": "user"
+      },
+      {
+        "content": "Yes, I enjoy music, sport and playing video games. I also like to travel and discover new places.",
+        "from": "me"
+      },
+      {
+        "content": "Cool! How can I get in touch with you?",
+        "from": "user"
+      },
+      {
+        "content": "You can simply answer this message or check out my contact page for more information.",
+        "from": "me"
+      },
+      {
+        "content": "I would be pleased to discuss with you!",
+        "from": "me"
+      }
+    ],
+    "type-your-message": "Type your message...",
+    "mail-subject": "Contact via antoine-podvin.fr"
   },
   "projects": {
     "title": "Projects"

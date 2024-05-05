@@ -4,7 +4,8 @@
   },
   "404": {
     "title": "Page non trouvée",
-    "message": "Désolé, la page que vous recherchez n'existe pas."
+    "message": "Désolé, la page que vous recherchez n'existe pas.",
+    "back-to-home": "Retour à l'accueil"
   },
   "home": {
     "title": "Accueil",
@@ -19,12 +20,88 @@
     },
     "projects": {
       "title": "Mes projets",
-      "description": "Si vous souhaitez découvrir mes réalisations, jetez un œil à mes projets ci-dessous. J'ai travaillé sur une variété de projets, incluant des applications web, mobiles et des jeux. Je suis constamment à la recherche de nouveaux défis, donc si vous avez une idée de projet, n'hésitez pas à me contacter."
+      "description": "Si vous souhaitez découvrir mes réalisations, jetez un œil à mes projets ci-dessous. J'ai travaillé sur une grande variété de projets, incluant des applications web, mobiles et des jeux. Je suis constamment à la recherche de nouveaux défis, donc si vous avez une idée de projet, n'hésitez pas à me contacter."
     }
   },
   "about": {
     "title": "À propos",
-    "description": "Ceci est la page à propos."
+    "title-full": "Qui suis-je ?",
+    "messages": [
+      {
+        "content": "Salut !",
+        "from": "user"
+      },
+      {
+        "content": "Qui es-tu ?",
+        "from": "user"
+      },
+      {
+        "content": "Salut !",
+        "from": "me"
+      },
+      {
+        "content": "Je m'appelle Antoine, je suis étudiant sur Lille 🇫🇷",
+        "from": "me"
+      },
+      {
+        "content": "Tu étudies quoi et où ?",
+        "from": "user"
+      },
+      {
+        "content": "Je suis actuellement en 5ème année à Epitech Lille, je prépare mon diplôme de Software Engineer Expert.",
+        "from": "me"
+      },
+      {
+        "content": "Trop bien ! Quelles sont tes compétences ?",
+        "from": "user"
+      },
+      {
+        "content": "Je suis passionné par le développement Mobile, Full Stack, Front-end, Back-end et le Design UI/UX.",
+        "from": "me"
+      },
+      {
+        "content": "Cool ! Tu as travaillé sur quels projets ?",
+        "from": "user"
+      },
+      {
+        "content": "J'ai travaillé sur une grande variété de projets, incluant des applications web, mobiles et des jeux.",
+        "from": "me"
+      },
+      {
+        "content": "Je suis constamment à la recherche de nouveaux défis, donc si vous avez une idée de projet, n'hésitez pas !",
+        "from": "me"
+      },
+      {
+        "content": "Cool ! Quels sont tes objectifs professionnels ?",
+        "from": "user"
+      },
+      {
+        "content": "Je souhaite travailler dans une entreprise innovante et dynamique, où je pourrais continuer à apprendre et à évoluer en tant que développeur.",
+        "from": "me"
+      },
+      {
+        "content": "Tu as des passions en dehors du développement ?",
+        "from": "user"
+      },
+      {
+        "content": "Oui, j'aime beaucoup la musique, le sport et les jeux vidéo. J'aime aussi voyager et découvrir de nouvelles cultures.",
+        "from": "me"
+      },
+      {
+        "content": "Cool ! Comment peut-on te contacter ?",
+        "from": "user"
+      },
+      {
+        "content": "Vous pouvez simplement répondre à ce message ou me contacter via la page contact.",
+        "from": "me"
+      },
+      {
+        "content": "Je serais ravi de discuter avec vous !",
+        "from": "me"
+      }
+    ],
+    "type-your-message": "Tapez votre message...",
+    "mail-subject": "Contact depuis antoine-podvin.fr"
   },
   "projects": {
     "title": "Projets"

@@ -26,10 +26,14 @@ const props = defineProps<{
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-      transform: translateY(-0.1rem);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1);
     }
   }
 

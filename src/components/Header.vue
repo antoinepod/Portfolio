@@ -150,7 +150,12 @@ router.beforeResolve((to, from, next) => {
           transition: all 0.2s ease-in-out;
 
           &:hover {
-            transform: translateY(-0.1rem);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 5px 2px var(--color-border);
+          }
+
+          &:active {
+            transform: scale(1);
             box-shadow: 0px 0px 5px 2px var(--color-border);
           }
         }

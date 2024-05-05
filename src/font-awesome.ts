@@ -10,7 +10,10 @@ import {
   faCircleInfo,
   faCopy,
   faEnvelope,
-  faPhone
+  faPhone,
+  faPaperPlane,
+  faCircleArrowUp,
+  faCirclePlus
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -22,7 +25,10 @@ library.add(
   faCircleInfo,
   faCopy,
   faEnvelope,
-  faPhone
+  faPhone,
+  faPaperPlane,
+  faCircleArrowUp,
+  faCirclePlus
 )
 
 

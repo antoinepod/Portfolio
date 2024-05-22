@@ -2,9 +2,6 @@
 import { useDarkModeStore } from '@/stores/darkMode';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-import IconSwitchAnimation from '@/components/IconSwitchAnimation.vue';
-import { ref, type Ref } from 'vue';
-
 const darkModeStore = useDarkModeStore();
 
 const copyToClipboard = (data: string) => {
@@ -20,40 +17,41 @@ const copyToClipboard = (data: string) => {
   }
 };
 
-const copyMailState: Ref<boolean> = ref(false);
-const copyPhoneState: Ref<boolean> = ref(false);
-
 const copyMail = () => {
   copyToClipboard('antoinepodvinn@gmail.com');
-  copyMailState.value = true;
 };
 
 const copyPhone = () => {
   copyToClipboard('+33618843245');
-  copyPhoneState.value = true;
 };
 </script>
 
 <template>
   <div class="contact">
-    <h2>{{ $t("contact.title") }}</h2>
+    <h2>{{ $t("contact.title-full") }}</h2>
     <div class="mail">
       <h4>{{ $t('contact.email.title') }}</h4>
       <p>{{ $t('contact.email.description') }}</p>
-      <p>antoinepodvinn@gmail.com</p>
-      <button @click="copyMail">
-        <IconSwitchAnimation class="copy-icon" :value="copyMailState" icon_false="copy" icon_true="envelope" />
-        {{ copyMailState ? $t('contact.email.email-copied') : $t('contact.email.copy-email') }}
-      </button>
+      <p class="to-copy" @click="copyMail">antoinepodvinn@gmail.com</p>
+      <a href="mailto:antoinepodvinn@gmail.com" class="button">
+        <FontAwesomeIcon class="email-icon" icon="envelope" />
+        {{ $t('contact.email.send-email') }}
+      </a>
     </div>
     <div class="phone">
       <h4>{{ $t('contact.phone.title') }}</h4>
       <p>{{ $t('contact.phone.description') }}</p>
-      <p>+33 6 18 84 32 45</p>
-      <button @click="copyPhone">
-        <IconSwitchAnimation class="copy-icon" :value="copyPhoneState" icon_false="copy" icon_true="phone" />
-        {{ copyPhoneState ? $t('contact.phone.phone-copied') : $t('contact.phone.copy-phone') }}
-      </button>
+      <p class="to-copy" @click="copyPhone">+33 6 18 84 32 45</p>
+      <div class="phone-buttons">
+        <a href="tel:+33618843245" class="button">
+          <FontAwesomeIcon class="phone-icon" icon="phone" />
+          {{ $t('contact.phone.call-me') }}
+        </a>
+        <a href="sms:+33618843245" class="button">
+          <FontAwesomeIcon class="sms-icon" icon="comment" />
+          {{ $t('contact.phone.send-sms') }}
+        </a>
+      </div>
     </div>
     <div class="socials">
       <h4>{{ $t('contact.socials.title') }}</h4>
@@ -98,7 +96,19 @@ const copyPhone = () => {
     color: var(--color-text);
   }
 
-  button {
+  .to-copy {
+    width: fit-content;
+    margin: 1rem auto;
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #3E87AB;
+    }
+  }
+
+  .button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,14 +122,27 @@ const copyPhone = () => {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: auto;
+    width: fit-content;
 
     &:hover {
       background-color: #3E87AB;
     }
 
-    .copy-icon {
-      margin-top: 0.3rem;
+    .email-icon,
+    .phone-icon,
+    .sms-icon {
       margin-right: 0.5rem;
+    }
+  }
+
+  .phone-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+      margin: 0 1rem;
     }
   }
 

@@ -101,25 +101,29 @@
       }
     ],
     "type-your-message": "Tapez votre message...",
-    "mail-subject": "Contact depuis antoine-podvin.fr"
+    "mail-subject": "Contact depuis antoine-podvin.fr",
+    "tech-stack": {
+      "title": "Stack technique",
+      "description": "Voici quelques-uns des langages et des technologies que j'utilise pour mes projets :"
+    }
   },
   "projects": {
     "title": "Projets"
   },
   "contact": {
     "title": "Contact",
+    "title-full": "Contactez-moi",
     "description": "Ceci est la page de contact.",
     "email": {
-      "title": "Envoyez-moi un email",
+      "title": "Par email",
       "description": "Si vous souhaitez me contacter, vous pouvez m'envoyer un email à l'adresse suivante :",
-      "copy-email": "Copier l'email",
-      "email-copied": "Email copié !"
+      "send-email": "Email"
     },
     "phone": {
-      "title": "Appelez-moi",
+      "title": "Par téléphone",
       "description": "Si vous préférez me contacter par téléphone, vous pouvez m'appeler au numéro suivant :",
-      "copy-phone": "Copier le numéro",
-      "phone-copied": "Numéro copié !"
+      "call-me": "Appeler",
+      "send-sms": "SMS"
     },
     "socials": {
       "title": "Réseaux sociaux",

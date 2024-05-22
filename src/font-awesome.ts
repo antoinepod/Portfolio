@@ -13,7 +13,8 @@ import {
   faPhone,
   faPaperPlane,
   faCircleArrowUp,
-  faCirclePlus
+  faCirclePlus,
+  faComment
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -28,7 +29,8 @@ library.add(
   faPhone,
   faPaperPlane,
   faCircleArrowUp,
-  faCirclePlus
+  faCirclePlus,
+  faComment
 )
 
 

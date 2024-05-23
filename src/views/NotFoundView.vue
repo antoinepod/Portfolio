@@ -15,26 +15,28 @@ import router from '@/router';
 .not-found {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
+  height: 80dvh;
   margin: auto;
 
   h3 {
     margin-bottom: 5dvh;
   }
-}
 
-button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: var(--color-heading);
-  color: var(--color-background);
-  margin: 1rem auto;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-heading);
+    color: var(--color-background);
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-  &:hover {
-    background-color: var(--color-text);
+    &:hover {
+      background-color: var(--color-text);
+    }
   }
 }
 </style>

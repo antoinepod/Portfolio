@@ -2,6 +2,9 @@
   "buttons": {
     "view-more": "Voir plus"
   },
+  "footer": {
+    "job-title": "Développeur Full-stack et Mobile"
+  },
   "404": {
     "title": "Page non trouvée",
     "message": "Désolé, la page que vous recherchez n'existe pas.",
@@ -11,7 +14,7 @@
     "title": "Accueil",
     "presentation": {
       "title": "Hi, I'm Antoine",
-      "subtitle": "Développeur full-stack et mobile passionné par la création et le design d'applications"
+      "subtitle": "Développeur Full-stack et Mobile passionné par la création et le design d'applications"
     },
     "welcome-to-my-portfolio": "Bienvenue sur mon portfolio ! <br> Ici, vous pourrez en apprendre plus sur moi et mes projets.",
     "about-me": {

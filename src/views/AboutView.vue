@@ -16,6 +16,7 @@ const loadMessages = (): Array<Message> => {
   return messages;
 }
 
+const conversation: Ref<HTMLElement | null> = ref(null);
 const messages: Ref<Array<Message>> = ref(loadMessages());
 
 const logos = [
@@ -44,17 +45,32 @@ const logos = [
   { file: 'android', name: 'Android Studio' },
   { file: 'postman', name: 'Postman' }
 ];
+
+const startConvButton: Ref<HTMLButtonElement | null> = ref(null);
+
+const launchConversation = () => {
+  if (conversation.value !== null) {
+    conversation.value.launch();
+  }
+  if (startConvButton.value !== null) {
+    startConvButton.value.disabled = true;
+  }
+}
 </script>
 
 <template>
   <div class="about">
     <div class="conversation-container">
-      <div class="heading">
-        <img class="photo-cv" src="/photo_cv.jpg" alt="Antoine Podvin" />
-        <h2 class="title">{{ $t('about.title-full') }}</h2>
+      <div class="introduction">
+        <div class="heading">
+          <img class="photo-cv" src="/photo_cv.jpg" alt="Antoine Podvin" />
+          <h2 class="title">{{ $t('about.title-full') }}</h2>
+        </div>
+        <p>{{ $t('about.introduction') }}</p>
+        <button ref="startConvButton" @click="launchConversation()">{{ $t('about.start-conversation') }}</button>
       </div>
       <div class="conversation">
-        <DiscussionBubble :messages="messages" />
+        <DiscussionBubble ref="conversation" :messages="messages" />
       </div>
     </div>
     <div class="tech-stack-container">
@@ -76,53 +92,87 @@ const logos = [
 <style scoped lang="scss">
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .conversation-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     text-align: justify;
-    margin: 1rem;
-    // background-color: red;
+    margin: 1rem auto;
 
     .conversation {
       margin: 1rem auto;
-      max-width: 40rem;
+      max-width: 30rem;
     }
 
-    .heading {
+    .introduction {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 50%;
+      max-width: 50rem;
+      text-align: justify;
+      margin: 1rem auto;
 
-      margin: 2rem auto;
+      .heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 2rem auto;
 
-      .title {
-        text-align: left;
+        .title {
+          text-align: left;
+          margin: auto;
+        }
+
+        .photo-cv {
+          max-width: 6rem;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 2rem;
+        }
       }
 
-      .photo-cv {
-        max-width: 6rem;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 2rem;
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: var(--color-heading);
+        color: var(--color-background);
+        margin: 1rem auto;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--color-text);
+        }
+
+        &:disabled {
+          background-color: var(--color-border);
+          cursor: not-allowed;
+        }
       }
     }
 
-
-
     @media screen and (max-width: 767px) {
-      width: 90dvw;
+      flex-direction: column;
 
-      .heading {
+      .introduction {
+        width: 95%;
+        max-width: 50rem;
         margin: 1rem auto;
 
-        .photo-cv {
-          margin-right: 1rem;
+        .heading {
+          .photo-cv {
+            margin-right: 1rem;
+          }
         }
       }
     }
@@ -133,7 +183,8 @@ const logos = [
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 90%;
+    max-width: 50rem;
     text-align: justify;
     margin: auto 1rem;
 

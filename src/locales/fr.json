@@ -28,8 +28,14 @@
   },
   "about": {
     "title": "À propos",
-    "title-full": "Qui suis-je ?",
+    "title-full": "À propos",
+    "introduction": "Salut ! Je m'appelle Antoine et je suis un développeur Full-stack et Mobile basé à Lille, en France. Je suis actuellement étudiant en 5ème année à Epitech Lille, où je prépare le diplôme de Software Engineer Expert. Je suis passionné par le développement et j'ai de l'expérience dans un large éventail de technologies et de langages de programmation. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer en tant que développeur.",
+    "start-conversation": "Lancer la conversation",
     "messages": [
+      {
+        "content": "Salut !",
+        "from": "me"
+      },
       {
         "content": "Salut !",
         "from": "user"
@@ -39,11 +45,7 @@
         "from": "user"
       },
       {
-        "content": "Salut !",
-        "from": "me"
-      },
-      {
-        "content": "Je m'appelle Antoine, je suis étudiant sur Lille 🇫🇷",
+        "content": "Je m'appelle Antoine, je suis étudiant sur Lille (🇫🇷)",
         "from": "me"
       },
       {

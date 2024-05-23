@@ -33,7 +33,7 @@ const copyPhone = () => {
       <h4>{{ $t('contact.email.title') }}</h4>
       <p>{{ $t('contact.email.description') }}</p>
       <p class="to-copy" @click="copyMail">antoinepodvinn@gmail.com</p>
-      <a href="mailto:antoinepodvinn@gmail.com" class="button">
+      <a href="mailto:contact@antoine-podvin.fr" class="button">
         <FontAwesomeIcon class="email-icon" icon="envelope" />
         {{ $t('contact.email.send-email') }}
       </a>

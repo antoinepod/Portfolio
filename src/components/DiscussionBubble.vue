@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch, type Ref } from 'vue';
+import { computed, ref, type Ref } from 'vue';
+import { useWindowStore } from '@/stores/windowStore';
 import i18n from '@/i18n';
 
 export type Message = {
@@ -38,13 +39,21 @@ const checkLastMessage = (index: number) => {
   return "";
 }
 
-onMounted(() => {
-  for (let i = 0; i < props.messages.length; i++) {
-    setTimeout(() => {
-      let htmlMessages: Ref<Array<HTMLElement> | null> = messagesRef;
-      if (htmlMessages.value !== null)
-        htmlMessages.value[i].classList.remove('hide');
-    }, i * 1000);
+defineExpose({
+  launch: () => {
+    const offset = useWindowStore().isMobile ? 100 : 100;
+    if (discussion.value !== null) {
+      window.scrollTo(0, discussion.value.offsetTop - offset);
+    }
+    for (let i = 0; i < props.messages.length; i++) {
+      setTimeout(() => {
+        let htmlMessages: Ref<Array<HTMLElement> | null> = messagesRef;
+        if (htmlMessages.value !== null) {
+          htmlMessages.value[i].classList.remove('hide');
+          htmlMessages.value[i].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }, i * 1000);
+    }
   }
 })
 
@@ -61,10 +70,12 @@ const showPopup = () => {
     popupRef.value.style.opacity = popupRef.value.style.opacity === "1" ? "0" : "1";
   console.log(popupRef.value);
 }
+
+const discussion: Ref<HTMLElement | null> = ref(null);
 </script>
 
 <template>
-  <div class="discussion-container">
+  <div ref="discussion" class="discussion-container">
     <section class="discussion">
       <div v-for="(message, index) in finalMessages" :key="index" ref="messagesRef"
         :class="`bubble ${message.from} ${message.order} ${checkLastMessage(index)} hide`">
@@ -73,7 +84,7 @@ const showPopup = () => {
     </section>
     <div class="send-message">
       <div ref="popupRef" class="popup">hello</div>
-      <font-awesome-icon class="icon plus" icon="circle-plus" @click="showPopup"/>
+      <font-awesome-icon class="icon plus" icon="circle-plus" @click="showPopup" />
       <input ref="sendMessageRef" type="text" :placeholder="$t('about.type-your-message')">
       <font-awesome-icon class="icon up" icon="circle-arrow-up" @click="sendMessage" />
     </div>
@@ -90,7 +101,7 @@ const showPopup = () => {
   .discussion {
     display: flex;
     flex-flow: column;
-    height: 55dvh;
+    height: 55vh;
     width: 100%;
     overflow-y: scroll;
     border-radius: 0.5rem;

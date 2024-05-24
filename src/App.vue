@@ -7,8 +7,8 @@ import Footer from './components/Footer.vue';
 <template>
   <div class="main-container">
     <Header class="header"></Header>
-    <div class="router-view">
-      <RouterView />
+    <div class="router-view-container">
+      <RouterView class="router-view" />
       <Footer class="footer"></Footer>
     </div>
   </div>
@@ -16,6 +16,7 @@ import Footer from './components/Footer.vue';
 
 <style scoped lang="scss">
 .main-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-weight: normal;
@@ -27,12 +28,25 @@ import Footer from './components/Footer.vue';
   background-color: var(--color-background);
   color: var(--color-text);
 
-  .router-view {
+  .router-view-container {
     z-index: 1 !important;
     padding: 7.5rem 0 1.5rem 0;
 
     @media screen and (max-width: 767px) {
       padding: 2rem 0 7.5rem 0;
+    }
+
+    .router-view {
+      position: relative;
+      max-width: inherit;
+      min-height: calc(100vh - 15.2rem);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
 }

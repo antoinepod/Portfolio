@@ -39,23 +39,23 @@ const checkLastMessage = (index: number) => {
   return "";
 }
 
-defineExpose({
-  launch: () => {
-    const offset = useWindowStore().isMobile ? 100 : 100;
-    if (discussion.value !== null) {
-      window.scrollTo(0, discussion.value.offsetTop - offset);
-    }
-    for (let i = 0; i < props.messages.length; i++) {
-      setTimeout(() => {
-        let htmlMessages: Ref<Array<HTMLElement> | null> = messagesRef;
-        if (htmlMessages.value !== null) {
-          htmlMessages.value[i].classList.remove('hide');
-          htmlMessages.value[i].scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
-      }, i * 1000);
-    }
+const isConversationStarted: Ref<Boolean> = ref(false);
+const startConversation = () => {
+  isConversationStarted.value = true;
+  const offset = useWindowStore().isMobile ? 100 : 100;
+  if (discussion.value !== null) {
+    window.scrollTo(0, discussion.value.offsetTop - offset);
   }
-})
+  for (let i = 0; i < props.messages.length; i++) {
+    setTimeout(() => {
+      let htmlMessages: Ref<Array<HTMLElement> | null> = messagesRef;
+      if (htmlMessages.value !== null) {
+        htmlMessages.value[i].classList.remove('hide');
+        htmlMessages.value[i].scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    }, i * 1000);
+  }
+}
 
 const messagesRef: Ref<Array<HTMLElement> | null> = ref(null);
 const sendMessageRef: Ref<HTMLInputElement | null> = ref(null);
@@ -75,7 +75,7 @@ const discussion: Ref<HTMLElement | null> = ref(null);
 </script>
 
 <template>
-  <div ref="discussion" class="discussion-container">
+  <div ref="discussion" class='discussion-container' v-bind:class="{ disabled: !isConversationStarted }">
     <section class="discussion">
       <div v-for="(message, index) in finalMessages" :key="index" ref="messagesRef"
         :class="`bubble ${message.from} ${message.order} ${checkLastMessage(index)} hide`">
@@ -88,6 +88,7 @@ const discussion: Ref<HTMLElement | null> = ref(null);
       <input ref="sendMessageRef" type="text" :placeholder="$t('about.type-your-message')">
       <font-awesome-icon class="icon up" icon="circle-arrow-up" @click="sendMessage" />
     </div>
+    <button v-if="!isConversationStarted" @click="startConversation()">{{ $t('about.start-conversation') }}</button>
   </div>
 </template>
 
@@ -97,6 +98,12 @@ const discussion: Ref<HTMLElement | null> = ref(null);
   border-radius: 1rem;
   padding: 0.5rem;
   padding-right: 0rem;
+  position: relative;
+
+  &.disabled *:not(button) {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 
   .discussion {
     display: flex;
@@ -221,6 +228,31 @@ const discussion: Ref<HTMLElement | null> = ref(null);
       left: calc(50% - 10rem);
       top: calc(50% - 5rem);
       transition: all 0.5s ease-in-out;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #0C5F88;
+    color: var(--vt-c-text-dark-1);
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #3E87AB;
+    }
+
+    &:disabled {
+      background-color: var(--color-border);
+      cursor: not-allowed;
     }
   }
 }

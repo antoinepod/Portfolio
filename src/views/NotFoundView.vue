@@ -17,7 +17,6 @@ import router from '@/router';
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 80dvh;
   margin: auto;
 
   h3 {

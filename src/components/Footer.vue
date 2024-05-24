@@ -31,10 +31,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: end;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: 'Product Sans';
-  transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out, fill 0.8s ease-in-out, stroke 0.8s ease-in-out, border-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out, text-shadow 0.8s ease-in-out;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -78,7 +74,7 @@ footer {
     svg {
       height: 1.2rem;
       width: 1.2rem;
-      fill: var(--color-text) !important;
+      fill: var(--color-text);
       margin-top: -0.2rem,;
     }
   }

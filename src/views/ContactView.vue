@@ -117,7 +117,7 @@ const copyPhone = () => {
     border: none;
     border-radius: 0.5rem;
     background-color: #0C5F88;
-    color: var(--color-background);
+    color: var(--vt-c-text-dark-1);
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;

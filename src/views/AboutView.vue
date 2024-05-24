@@ -45,17 +45,6 @@ const logos = [
   { file: 'android', name: 'Android Studio' },
   { file: 'postman', name: 'Postman' }
 ];
-
-const startConvButton: Ref<HTMLButtonElement | null> = ref(null);
-
-const launchConversation = () => {
-  if (conversation.value !== null) {
-    conversation.value.launch();
-  }
-  if (startConvButton.value !== null) {
-    startConvButton.value.disabled = true;
-  }
-}
 </script>
 
 <template>
@@ -67,7 +56,6 @@ const launchConversation = () => {
           <h2 class="title">{{ $t('about.title-full') }}</h2>
         </div>
         <p>{{ $t('about.introduction') }}</p>
-        <button ref="startConvButton" @click="launchConversation()">{{ $t('about.start-conversation') }}</button>
       </div>
       <div class="conversation">
         <DiscussionBubble ref="conversation" :messages="messages" />
@@ -106,8 +94,8 @@ const launchConversation = () => {
     margin: 1rem auto;
 
     .conversation {
-      margin: 1rem auto;
-      max-width: 30rem;
+      margin: auto;
+      max-width: 35rem;
     }
 
     .introduction {
@@ -115,10 +103,11 @@ const launchConversation = () => {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
+      width: 100%;
       max-width: 50rem;
       text-align: justify;
-      margin: 1rem auto;
+      margin: auto;
+      padding: 2rem;
 
       .heading {
         display: flex;
@@ -139,26 +128,6 @@ const launchConversation = () => {
           margin-right: 2rem;
         }
       }
-
-      button {
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        background-color: var(--color-heading);
-        color: var(--color-background);
-        margin: 1rem auto;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-          background-color: var(--color-text);
-        }
-
-        &:disabled {
-          background-color: var(--color-border);
-          cursor: not-allowed;
-        }
-      }
     }
 
     @media screen and (max-width: 767px) {
@@ -168,6 +137,7 @@ const launchConversation = () => {
         width: 95%;
         max-width: 50rem;
         margin: 1rem auto;
+        padding: 0;
 
         .heading {
           .photo-cv {
@@ -184,7 +154,7 @@ const launchConversation = () => {
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 50rem;
+    max-width: 80rem;
     text-align: justify;
     margin: auto 1rem;
 

@@ -96,13 +96,12 @@ import AnimatedRouterLink from '@/components/AnimatedRouterLink.vue';
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto;
     text-align: justify;
 
     .about-me,
     .projects {
       width: 45%;
-      // background-color: red;
     }
 
     .view-more {

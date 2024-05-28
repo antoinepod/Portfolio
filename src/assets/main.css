@@ -1,6 +1,9 @@
 @import './base.css';
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--color-heading);
 }
 
@@ -49,7 +52,7 @@ p {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;  
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -64,4 +67,34 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-border-hover);
+}
+
+/* Button */
+button,
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0C5F88;
+  color: var(--vt-c-text-dark-1) !important;
+  margin: 1rem auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: auto;
+  width: fit-content;
+}
+
+button:hover,
+.button:hover {
+  background-color: #3E87AB;
+}
+
+button:disabled
+.button:disabled {
+  background-color: var(--color-border);
+  cursor: not-allowed;
 }

@@ -237,23 +237,6 @@ const discussion: Ref<HTMLElement | null> = ref(null);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 9999;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #0C5F88;
-    color: var(--vt-c-text-dark-1);
-    margin: 1rem auto;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background-color: #3E87AB;
-    }
-
-    &:disabled {
-      background-color: var(--color-border);
-      cursor: not-allowed;
-    }
   }
 }
 </style>

@@ -108,31 +108,10 @@ const copyPhone = () => {
     }
   }
 
-  .button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0.4rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #0C5F88;
-    color: var(--vt-c-text-dark-1);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: auto;
-    width: fit-content;
-
-    &:hover {
-      background-color: #3E87AB;
-    }
-
-    .email-icon,
-    .phone-icon,
-    .sms-icon {
-      margin-right: 0.5rem;
-    }
+  .email-icon,
+  .phone-icon,
+  .sms-icon {
+    margin-right: 0.5rem;
   }
 
   .phone-buttons {

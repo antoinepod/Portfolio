@@ -110,10 +110,48 @@
     "tech-stack": {
       "title": "Stack technique",
       "description": "Voici quelques-uns des langages et des technologies que j'utilise pour mes projets :"
-    }
+    },
+    "cv": "Voir mon CV"
   },
   "projects": {
-    "title": "Projets"
+    "title": "Projets",
+    "list" : [
+      {
+        "title": "Projet 1",
+        "description": "Ceci est la description du projet 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Mobile", "Game"],
+        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
+        "image": "project-1.jpg"
+      },
+      {
+        "title": "Projet 2",
+        "description": "Ceci est la description du projet 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Mobile"],
+        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
+        "image": "project-2.jpg"
+      },
+      {
+        "title": "Projet 3",
+        "description": "Ceci est la description du projet 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web"],
+        "tech": ["React", "Node.js", "Express", "MongoDB"],
+        "image": "project-3.jpg"
+      },
+      {
+        "title": "Projet 4",
+        "description": "Ceci est la description du projet 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Mobile"],
+        "tech": ["React Native", "Node.js", "Express", "MongoDB"],
+        "image": "project-4.jpg"
+      },
+      {
+        "title": "Projet 5",
+        "description": "Ceci est la description du projet 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Game"],
+        "tech": ["Unity", "C#"],
+        "image": "project-5.jpg"
+      }
+    ]
   },
   "contact": {
     "title": "Contact",

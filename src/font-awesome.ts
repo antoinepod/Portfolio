@@ -14,7 +14,8 @@ import {
   faPaperPlane,
   faCircleArrowUp,
   faCirclePlus,
-  faComment
+  faComment,
+  faFileInvoice
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -30,7 +31,8 @@ library.add(
   faPaperPlane,
   faCircleArrowUp,
   faCirclePlus,
-  faComment
+  faComment,
+  faFileInvoice
 )
 
 

@@ -110,10 +110,48 @@
     "tech-stack": {
       "title": "Technical stack",
       "description": "Here are some of the technologies and programming languages that I have experience with:"
-    }
+    },
+    "cv": "View my CV"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "list" : [
+      {
+        "title": "Project 1",
+        "description": "This is a description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Mobile", "Game"],
+        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
+        "image": "aizy.gif"
+      },
+      {
+        "title": "Project 2",
+        "description": "This is a description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Mobile"],
+        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
+        "image": "yogamarine.png"
+      },
+      {
+        "title": "Project 3",
+        "description": "This is a description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web"],
+        "tech": ["React", "Node.js", "Express", "MongoDB"],
+        "image": "yogamarine.png"
+      },
+      {
+        "title": "Project 4",
+        "description": "This is a description of project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Mobile"],
+        "tech": ["React Native", "Node.js", "Express", "MongoDB"],
+        "image": "aizy.gif"
+      },
+      {
+        "title": "Project 5",
+        "description": "This is a description of project 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Game"],
+        "tech": ["Unity", "C#"],
+        "image": "yogamarine.png"
+      }
+    ]
   },
   "contact": {
     "title": "Contact",

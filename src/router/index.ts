@@ -33,6 +33,10 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: NotFoundView
+    },
+    {
+      path: '/dev.html',
+      redirect: '/'
     }
   ],
   scrollBehavior(to, from, savedPosition) {

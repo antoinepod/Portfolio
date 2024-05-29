@@ -117,39 +117,40 @@
     "title": "Projects",
     "list" : [
       {
-        "title": "Project 1",
-        "description": "This is a description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Web", "Mobile", "Game"],
-        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
-        "image": "aizy.gif"
+        "title": "Portfolio",
+        "description": "This is a description of my Portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Front-end"],
+        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "OVHcloud", "GitHub"]
       },
       {
-        "title": "Project 2",
-        "description": "This is a description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Web", "Mobile"],
-        "tech": ["React", "React Native", "Node.js", "Express", "MongoDB"],
-        "image": "yogamarine.png"
+        "title": "Popsell",
+        "description": "This is a description of Popsell. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Front-end"],
+        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "SQL", "Jira", "Bitbucket", "Docker"]
       },
       {
-        "title": "Project 3",
-        "description": "This is a description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Web"],
-        "tech": ["React", "Node.js", "Express", "MongoDB"],
-        "image": "yogamarine.png"
+        "title": "Aizy",
+        "description": "This is a description of Aizy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Back-end"],
+        "tech": ["Node.js", "Express.js", "TypeScript", "MongoDB"]
       },
       {
-        "title": "Project 4",
-        "description": "This is a description of project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Mobile"],
-        "tech": ["React Native", "Node.js", "Express", "MongoDB"],
-        "image": "aizy.gif"
+        "title": "YogaMarine",
+        "description": "This is a description of YogaMarine. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Web", "Front-end"],
+        "tech": ["Vue.js 3", "HTML5/CSS3", "Netlify", "GitHub"]
       },
       {
-        "title": "Project 5",
-        "description": "This is a description of project 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Game"],
-        "tech": ["Unity", "C#"],
-        "image": "yogamarine.png"
+        "title": "Area",
+        "description": "This is a description of the Area. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Mobile", "Full-stack"],
+        "tech": ["React Native", "Node.js", "Express.js", "MongoDB"]
+      },
+      {
+        "title": "Zôdio",
+        "description": "This is a description of Zôdio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "tags": ["Mobile", "Front-end"],
+        "tech": ["Java", "Android Studio"]
       }
     ]
   },

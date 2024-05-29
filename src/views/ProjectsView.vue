@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import i18n from '@/i18n';
 import { ref, type Ref } from 'vue';
+import { useDarkModeStore } from '@/stores/darkMode';
 
 const { tm } = i18n.global;
 
@@ -12,6 +13,15 @@ type Project = {
   image: string;
 }
 
+const loadImages = (projects: Array<Project>) => {
+  projects[0].image = useDarkModeStore().isDark ? 'portfolio-dark.png' : 'portfolio.png'
+  projects[1].image = 'popsell.png';
+  projects[2].image = useDarkModeStore().isDark ? 'aizy-dark.gif' : 'aizy.gif';
+  projects[3].image = 'yogamarine.png';
+  projects[4].image = 'ifttt.png';
+  projects[5].image = 'zodio.png';
+}
+
 const loadArray = (arrayName: string, i: string): Array<string> => {
   const tags = Array<string>();
   for (let j in tm(`projects.list[${i}].${arrayName}`) as unknown as Array<Object>) {
@@ -20,7 +30,7 @@ const loadArray = (arrayName: string, i: string): Array<string> => {
   return tags;
 }
 
-const loadProjects = (): Array<Object> => {
+const loadProjects = (): Array<Project> => {
   const projects = Array<Project>();
   for (let i in tm('projects.list') as unknown as Array<Object>) {
     projects.push({
@@ -28,14 +38,21 @@ const loadProjects = (): Array<Object> => {
       description: `projects.list[${i}].description`,
       tags: loadArray('tags', i),
       tech: loadArray('tech', i),
-      image: `projects.list[${i}].image`
+      image: ''
     });
     console.log(projects);
   }
+  loadImages(projects);
   return projects;
 }
 
-const projects: Ref<Array<Object>> = ref(loadProjects());
+const projects: Ref<Array<Project>> = ref(loadProjects());
+
+import { watch } from 'vue';
+
+watch(() => useDarkModeStore().isDark, () => {
+  loadImages(projects.value);
+});
 </script>
 
 <template>
@@ -44,16 +61,16 @@ const projects: Ref<Array<Object>> = ref(loadProjects());
   <div class="projects">
     <div class="project" v-for="project in projects">
       <div class="info-container">
-        <h2>{{ $t((project as Project).title) }}</h2>
-        <p>{{ $t((project as Project).description) }}</p>
+        <h2>{{ $t(project.title) }}</h2>
         <div class="tags">
-          <span v-for="tag in (project as Project).tags">{{ $t(tag) }}</span>
+          <span v-for="tag in project.tags">{{ $t(tag) }}</span>
         </div>
+        <p>{{ $t(project.description) }}</p>
         <div class="tech">
-          <span v-for="tech in (project as Project).tech">{{ $t(tech) }}</span>
+          <span v-for="tech in project.tech">{{ $t(tech) }}</span>
         </div>
       </div>
-      <img :src="`/logos/${$t((project as Project).image)}`" :alt="$t((project as Project).title)" />
+      <img :src="`/logos/${(project.image)}`" :alt="$t(project.title)" />
     </div>
   </div>
 </template>
@@ -75,7 +92,7 @@ h2 {
     border: 1px solid var(--color-border);
     border-radius: 0.5rem;
     text-align: justify;
-    width: 80%;
+    width: 85%;
 
     &:nth-child(odd) {
       align-self: flex-start;
@@ -84,10 +101,14 @@ h2 {
     &:nth-child(even) {
       align-self: flex-end;
       flex-direction: row-reverse;
+
+      .tech {
+        justify-content: flex-end !important;
+      }
     }
 
     @media screen and (max-width: 767px) {
-      flex-direction: column !important;
+      flex-direction: column-reverse !important;
       width: 100%;
     }
 
@@ -102,26 +123,28 @@ h2 {
 
       .tags {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        margin-top: 0.5rem;
+        color: var(--color-heading);
+        margin: 0.5rem;
 
         span {
           padding: 0.25rem 0.5rem;
-          border: 1px solid var(--color-border);
+          border: 1px solid var(--color-border-hover);
           border-radius: 0.25rem;
         }
       }
 
       .tech {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 0.5rem;
-        margin-top: 0.5rem;
 
         span {
           padding: 0.25rem 0.5rem;
@@ -132,12 +155,14 @@ h2 {
     }
 
     img {
+      height: auto;
       width: 35rem;
-      object-fit: cover;
+      object-fit: contain;
       max-width: 100%;
       max-height: 20rem;
       border-radius: 0.5rem;
       margin: auto;
+      padding: 2rem 4rem;
     }
   }
 }

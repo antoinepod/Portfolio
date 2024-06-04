@@ -81,7 +81,7 @@ button,
   border-radius: 0.5rem;
   background-color: #0C5F88;
   color: var(--vt-c-text-dark-1) !important;
-  margin: 1rem auto;
+  margin: 1rem 0;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: auto;

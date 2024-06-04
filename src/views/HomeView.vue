@@ -85,7 +85,7 @@ import AnimatedRouterLink from '@/components/AnimatedRouterLink.vue';
   }
 
   .welcome-text {
-    margin: 4rem 0;
+    margin: 4rem auto 2rem auto;
 
     @media screen and (max-width: 767px) {
       margin: 2rem 0;

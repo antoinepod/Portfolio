@@ -14,22 +14,22 @@
     "title": "Home",
     "presentation": {
       "title": "Hi, I'm Antoine",
-      "subtitle": "Full-stack and Mobile Developer with a passion for creating beautiful and functional applications"
+      "subtitle": "Full-stack and Mobile Developer with a passion for creating and designing applications"
     },
     "welcome-to-my-portfolio": "Welcome to my portfolio! <br> Here you will be able to learn more about me and my projects.",
     "about-me": {
       "title": "About me",
-      "description": "I am currently a 5th year student at Epitech and I am passionate about software development. I have experience in a wide range of technologies and programming languages, and I am always looking for new challenges and opportunities to learn and grow."
+      "description": "I am currently a 5th year student at Epitech and I am passionate about software development. I have experience in a wide range of technologies and programming languages. I am always looking for new challenges and opportunities to learn and grow."
     },
     "projects": {
       "title": "Projects",
-      "description": "If you are interested in seeing some of my work, you can check out my projects below. I have worked on a variety of projects, including web applications, mobile applications, and games. I am always looking for new projects to work on, so if you have an idea for a project, feel free to reach out to me."
+      "description": "I have worked on a variety of projects, including web applications, mobile applications, and games. I am always looking for new projects to work on, so if you have an idea for a project, feel free to reach out to me!"
     }
   },
   "about": {
     "title": "About",
     "title-full": "About me",
-    "introduction": "Hi! My name is Antoine and I am a Full-stack and Mobile Developer based in Lille, France. I am currently a 5th year student at Epitech Lille, where I am preparing to graduate as a Software Engineer Expert. I am passionate about software development and I have experience in a wide range of technologies and programming languages. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+    "introduction": "Hi! My name is Antoine and I am a Full-stack and Mobile Developer based in Lille, France. I am currently a 5th year student at Epitech, where I am preparing to graduate as a Software Engineer Expert. I am passionate about software development and I have experience in a wide range of technologies and programming languages. I am always looking for new challenges and opportunities to learn and grow as a developer.",
     "start-conversation": "Start the discussion",
     "messages": [
       {
@@ -77,7 +77,7 @@
         "from": "me"
       },
       {
-        "content": "Okay! What are your career goals?",
+        "content": "Okay thank you! What are your career goals?",
         "from": "user"
       },
       {
@@ -93,11 +93,11 @@
         "from": "me"
       },
       {
-        "content": "Cool! How can I get in touch with you?",
+        "content": "How can I get in touch with you?",
         "from": "user"
       },
       {
-        "content": "You can simply answer this message or check out my contact page for more information.",
+        "content": "You can simply answer this message or check out my 'Contact' page for more information.",
         "from": "me"
       },
       {
@@ -118,46 +118,91 @@
     "list" : [
       {
         "title": "Portfolio",
-        "description": "This is a description of my Portfolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "This is my latest project: the website you are currently browsing. I designed and developed this portfolio to showcase my skills and projects.",
+        "details": ["UI/UX Design", "Responsive Design", "Hosting on OVHcloud", "Using GitHub Actions for deployment"],
         "tags": ["Web", "Front-end"],
-        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "OVHcloud", "GitHub"]
+        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "OVHcloud", "GitHub"],
+        "links": [
+          {
+            "name": "View on GitHub",
+            "url": "https://github.com/antoinepod/Portfolio"
+          }
+        ]
       },
       {
         "title": "Popsell",
-        "description": "This is a description of Popsell. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Popsell is a social commerce SaaS company that works with brands like Histoire d'Or. During my internship as a front-end developer, I worked on migrating the company's back-office from Vue.js 2 to Vue.js 3. I also participated in the redesign of the user interface and the addition of new features.",
+        "details": ["Agile methodology", "Migration from Vue.js 2 to Vue.js 3", "User interface redesign", "Continuous integration"],
         "tags": ["Web", "Front-end"],
-        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "SQL", "Jira", "Bitbucket", "Docker"]
+        "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "SQL", "Jira", "Bitbucket", "Docker"],
+        "links": [
+          {
+            "name": "View my internship report",
+            "url": "/Internship - Popsell.pdf"
+          }
+        ]
       },
       {
         "title": "Aizy",
-        "description": "This is a description of Aizy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Aizy is the final project I completed with six other students. It is a trading bot marketplace, specifically, it is a web application that allows users to create, test, and rent out trading bots. I worked on the back-end of the application.",
+        "details": ["Agile methodology", "Creating a REST API", "User and bot management", "Security and authentication", "Storage on a MongoDB database"],
         "tags": ["Web", "Back-end"],
-        "tech": ["Node.js", "Express.js", "TypeScript", "MongoDB"]
+        "tech": ["Node.js", "Express.js", "TypeScript", "MongoDB"],
+        "links": [
+          {
+            "name": "View the website",
+            "url": "https://aizy.pages.dev/home"
+          }
+        ]
       },
       {
         "title": "YogaMarine",
-        "description": "This is a description of YogaMarine. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "YogaMarine is a website designed for a private yoga teacher. I took the time to understand her needs and expectations in order to offer her a website that suits her. She sent me a mockup of the site that I then improved before integrating it.",
+        "details": ["UI/UX Design", "Responsive Design", "Hosting on Netlify", "Customer relationship", "Improving and integrating the client-provided mockup"],
         "tags": ["Web", "Front-end"],
-        "tech": ["Vue.js 3", "HTML5/CSS3", "Netlify", "GitHub"]
+        "tech": ["Vue.js 3", "HTML5/CSS3", "Netlify", "GitHub"],
+        "links": [
+          {
+            "name": "View the website",
+            "url": "https://yogamarine.netlify.app/"
+          },
+          {
+            "name": "View on GitHub",
+            "url": "https://github.com/antoinepod/YogaMarine"
+          }
+        ]
       },
       {
         "title": "Area",
-        "description": "This is a description of the Area. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Mobile", "Full-stack"],
-        "tech": ["React Native", "Node.js", "Express.js", "MongoDB"]
+        "description": "The Area is a project I developed during my third year at Epitech. It is a web application, a mobile application, and a server that allow users to create automation scenarios by connecting services together via APIs, similar to IFTTT. I worked on the mobile application and the server.",
+        "details": ["Use of external APIs", "User and service management", "Security and authentication", "Storage on a MongoDB database"],
+        "tags": ["Mobile", "Back-end"],
+        "tech": ["React Native", "Node.js", "Express.js", "MongoDB", "API"],
+        "links": [
+          {
+            "name": "View on GitHub",
+            "url": "https://github.com/antoinepod/"
+          }
+        ]
       },
       {
         "title": "Zôdio",
-        "description": "This is a description of Zôdio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tags": ["Mobile", "Front-end"],
-        "tech": ["Java", "Android Studio"]
+        "description": "Zôdio is a retail chain specializing in home decoration and creative hobbies. I completed my second-year internship at Zôdio, where I worked on developing a mobile application for store employees. I was able to make updates to the application, fix bugs, and add new features such as support for electronic shelf labels in stores. This required me to contact the company that supplied these labels to obtain their API documentation and integrate it into the application.",
+        "details": ["Agile methodology", "Updates of a mobile application", "Use of an external API", "Integration of new features", "Customer relationship", "Documentation"],
+        "tags": ["Mobile", "Back-end"],
+        "tech": ["Java", "Android Studio", "API", "Postman"],
+        "links": [
+          {
+            "name": "View my internship report",
+            "url": "/Internship - Zôdio.pdf"
+          }
+        ]
       }
     ]
   },
   "contact": {
     "title": "Contact",
     "title-full": "Contact me",
-    "description": "This is a contact page.",
     "email": {
       "title": "By email",
       "description": "If you would like to get in touch with me, you can send me an email at the following address:",
@@ -165,13 +210,13 @@
     },
     "phone": {
       "title": "By phone",
-      "description": "You can also give me a call at the following number:",
+      "description": "If you prefer to contact me by phone, you can reach me at the following number:",
       "call-me": "Call",
       "send-sms": "SMS"
     },
     "socials": {
-      "title": "Social media",
-      "description": "You can also find me on social media by clicking on the icons below:"
+      "title": "Social networks",
+      "description": "You can also find me on my social networks by clicking on the icons below:"
     }
   }
 }

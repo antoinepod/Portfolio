@@ -25,8 +25,9 @@ const loadImages = (projects: Array<Project>) => {
   projects[1].image = 'popsell.png';
   projects[2].image = useDarkModeStore().isDark ? 'aizy-dark.gif' : 'aizy.gif';
   projects[3].image = 'yogamarine.png';
-  projects[4].image = 'ifttt.png';
-  projects[5].image = 'zodio.png';
+  projects[4].image = 'r-type.png';
+  projects[5].image = 'ifttt.png';
+  projects[6].image = 'zodio.png';
 }
 
 const loadLinks = (i: string): Array<Link> => {
@@ -114,7 +115,7 @@ h2 {
   .project {
     display: flex;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     border: 1px solid var(--color-border);
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem var(--color-border);
@@ -134,6 +135,7 @@ h2 {
       flex-direction: column-reverse !important;
       width: 100%;
       margin: 1rem auto;
+      padding: 1.5rem;
 
       h2 {
         text-align: center;
@@ -199,7 +201,11 @@ h2 {
         align-items: center;
         gap: 0.5rem;
         width: 100%;
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 1rem;
+        }
 
         a {
           text-decoration: none;

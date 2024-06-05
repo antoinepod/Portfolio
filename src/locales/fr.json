@@ -169,6 +169,19 @@
         ]
       },
       {
+        "title": "R-Type",
+        "description": "R-Type est un projet que j'ai réalisé lors de ma 3ème année à Epitech. Il s'agit d'un jeu vidéo de type shoot'em up en multijoueur. J'ai travaillé sur le moteur du jeu, la logique du jeu, le design du jeu, et j'ai réalisé l'entiereté du serveur multi-threadé.",
+        "details": ["Moteur de jeu", "Logique de jeu", "Design de jeu", "Serveur multi-threadé", "Utilisation de librairies C++ tierces"],
+        "tags": ["Game", "Back-end"],
+        "tech": ["C++", "SFML", "Boost", "TCP/IP"],
+        "links": [
+          {
+            "name": "Voir sur GitHub",
+            "url": "https://github.com/antoinepod/R-Type"
+          }
+        ]
+      },
+      {
         "title": "Area",
         "description": "L'Area est un projet que j'ai réalisé lors de ma 3ème année à Epitech. Il s'agit d'une application web, d'une application mobile et d'un serveur qui permettent aux utilisateurs de créer des scénarios d'automatisation en reliant des services entre eux via des API, à la manière d'IFTTT. J'ai travaillé sur l'application mobile et sur le serveur de l'application.",
         "details": ["Utilisation d'API externes", "Gestion des utilisateurs et des services", "Sécurité et authentification", "Stockage sur une base de données MongoDB"],

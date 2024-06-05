@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDarkModeStore } from '@/stores/darkMode';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { ref, type Ref } from 'vue';
 
 const darkModeStore = useDarkModeStore();
 
@@ -18,11 +19,24 @@ const copyToClipboard = (data: string) => {
 };
 
 const copyMail = () => {
-  copyToClipboard('antoinepodvinn@gmail.com');
+  copyToClipboard('contact@antoine-podvin.fr');
 };
 
 const copyPhone = () => {
   copyToClipboard('+33618843245');
+};
+
+const formName: Ref<HTMLInputElement | null> = ref(null);
+const formEmail: Ref<HTMLInputElement | null> = ref(null);
+const formSubject: Ref<HTMLInputElement | null> = ref(null);
+const formMessage: Ref<HTMLTextAreaElement | null> = ref(null);
+
+const sendFormEmail = () => {
+  let url = `mailto:contact@antoine-podvin.fr?subject=${formSubject.value?.value}&body=${formName.value?.value}%20(${formEmail.value?.value})%0D%0A%0D%0A`;
+  if (formMessage.value) {
+    url += encodeURIComponent(formMessage.value.value);
+  }
+  window.open(url);
 };
 </script>
 
@@ -30,13 +44,26 @@ const copyPhone = () => {
   <div class="contact">
     <h2>{{ $t("contact.title-full") }}</h2>
     <div class="mail">
-      <h4>{{ $t('contact.email.title') }}</h4>
-      <p>{{ $t('contact.email.description') }}</p>
-      <p class="to-copy" @click="copyMail">antoinepodvinn@gmail.com</p>
-      <a href="mailto:contact@antoine-podvin.fr" class="button">
-        <FontAwesomeIcon class="email-icon" icon="envelope" />
-        {{ $t('contact.email.send-email') }}
-      </a>
+      <div class="infos">
+        <h4>{{ $t('contact.email.title') }}</h4>
+        <p>{{ $t('contact.email.description') }}</p>
+        <p class="to-copy" @click="copyMail">contact@antoine-podvin.fr</p>
+        <a href="mailto:contact@antoine-podvin.fr" class="button">
+          <FontAwesomeIcon class="email-icon" icon="envelope" />
+          {{ $t('contact.email.send-email') }}
+        </a>
+      </div>
+      <div class="form">
+        <h4>{{ $t('contact.email.form.title') }}</h4>
+        <input ref="formName" type="text" :placeholder="$t('contact.email.form.name')">
+        <input ref="formEmail" type="email" :placeholder="$t('contact.email.form.email')">
+        <input ref="formSubject" type="text" :placeholder="$t('contact.email.form.subject')">
+        <textarea ref="formMessage" :placeholder="$t('contact.email.form.message')" rows="4"></textarea>
+        <button class="send" @click="sendFormEmail">
+          <FontAwesomeIcon class="email-icon" icon="circle-arrow-up" />
+          {{ $t('contact.email.form.send') }}
+        </button>
+      </div>
     </div>
     <div class="phone">
       <h4>{{ $t('contact.phone.title') }}</h4>
@@ -83,12 +110,13 @@ const copyPhone = () => {
   align-items: center;
   text-align: center;
 
-  &>* {
-    margin: 2rem 0;
+  .mail,
+  .phone {
+    margin: 2rem auto;
+  }
 
-    @media screen and (max-width: 767px) {
-      margin: 1rem 0;
-    }
+  .socials {
+    margin-top: 2rem;
   }
 
   a {
@@ -159,6 +187,55 @@ const copyPhone = () => {
         opacity: 1;
         transform: translateY(0);
       }
+    }
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &>* {
+      margin: 0 1rem;
+      width: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+
+      &>* {
+        width: 100%;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .form {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 0 10px var(--color-border);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input,
+    textarea {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      border: 2px solid var(--color-border);
+      background-color: var(--color-background);
+      color: var(--color-text);
+      margin: 0.25rem;
+    }
+
+    button {
+      text-decoration: none;
+      margin: 0.5rem auto 0 auto;
     }
   }
 }

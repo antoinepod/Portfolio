@@ -113,12 +113,13 @@ h2 {
 
   .project {
     display: flex;
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem;
     border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem var(--color-border);
     text-align: justify;
-    width: 85%;
+    width: 80%;
 
     &:nth-child(odd) {
       align-self: flex-start;
@@ -132,6 +133,7 @@ h2 {
     @media screen and (max-width: 767px) {
       flex-direction: column-reverse !important;
       width: 100%;
+      margin: 1rem auto;
 
       h2 {
         text-align: center;
@@ -169,7 +171,7 @@ h2 {
         span {
           padding: 0.25rem 0.5rem;
           border: 1px solid var(--color-border-hover);
-          border-radius: 0.25rem;
+          border-radius: 0.5rem;
         }
       }
 
@@ -185,7 +187,7 @@ h2 {
         span {
           padding: 0.25rem 0.5rem;
           border: 1px solid var(--color-border);
-          border-radius: 0.25rem;
+          border-radius: 0.5rem;
         }
       }
 
@@ -197,6 +199,7 @@ h2 {
         align-items: center;
         gap: 0.5rem;
         width: 100%;
+        margin-top: 0.25rem;
 
         a {
           text-decoration: none;

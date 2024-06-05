@@ -163,10 +163,6 @@
         "tech": ["Vue.js 3", "HTML5/CSS3", "Netlify", "GitHub"],
         "links": [
           {
-            "name": "View the website",
-            "url": "https://yogamarine.netlify.app/"
-          },
-          {
             "name": "View on GitHub",
             "url": "https://github.com/antoinepod/YogaMarine"
           }
@@ -206,7 +202,15 @@
     "email": {
       "title": "By email",
       "description": "If you would like to get in touch with me, you can send me an email at the following address:",
-      "send-email": "Email"
+      "send-email": "Email",
+      "form": {
+        "title": "Email me",
+        "name": "Your name",
+        "email": "Your email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send"
+      }
     },
     "phone": {
       "title": "By phone",

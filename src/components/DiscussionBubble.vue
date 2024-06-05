@@ -2,6 +2,7 @@
 import { computed, ref, type Ref } from 'vue';
 import { useWindowStore } from '@/stores/windowStore';
 import i18n from '@/i18n';
+import router from '@/router';
 
 export type Message = {
   content: string;
@@ -59,16 +60,13 @@ const startConversation = () => {
 
 const messagesRef: Ref<Array<HTMLElement> | null> = ref(null);
 const sendMessageRef: Ref<HTMLInputElement | null> = ref(null);
-const popupRef: Ref<HTMLDivElement | null> = ref(null);
 
 const sendMessage = () => {
-  window.open(`mailto:contact@antoine-podvin.fr?subject=${t('about.mail-subject')}&body=${sendMessageRef.value?.value}`);
-}
-
-const showPopup = () => {
-  if (popupRef.value !== null)
-    popupRef.value.style.opacity = popupRef.value.style.opacity === "1" ? "0" : "1";
-  console.log(popupRef.value);
+  let url = `mailto:contact@antoine-podvin.fr?subject=${t('about.mail-subject')}`;
+  if (sendMessageRef.value) {
+    url += "&body=" + encodeURIComponent(sendMessageRef.value.value);
+  }
+  window.open(url);
 }
 
 const discussion: Ref<HTMLElement | null> = ref(null);
@@ -83,9 +81,8 @@ const discussion: Ref<HTMLElement | null> = ref(null);
       </div>
     </section>
     <div class="send-message">
-      <div ref="popupRef" class="popup">hello</div>
-      <font-awesome-icon class="icon plus" icon="circle-plus" @click="showPopup" />
-      <input ref="sendMessageRef" type="text" :placeholder="$t('about.type-your-message')">
+      <font-awesome-icon class="icon plus" icon="circle-plus" @click="router.push({ name: 'contact' })" />
+      <textarea ref="sendMessageRef" type="text" :placeholder="$t('about.type-your-message')" rows="1"></textarea>
       <font-awesome-icon class="icon up" icon="circle-arrow-up" @click="sendMessage" />
     </div>
     <button v-if="!isConversationStarted" @click="startConversation()">{{ $t('about.start-conversation') }}</button>
@@ -182,7 +179,7 @@ const discussion: Ref<HTMLElement | null> = ref(null);
     align-items: center;
     margin-right: 0.5rem;
 
-    input {
+    textarea {
       width: 100%;
       padding: 0.25rem 0.5rem;
       border-radius: 1rem;
@@ -213,21 +210,6 @@ const discussion: Ref<HTMLElement | null> = ref(null);
     .plus {
       color: var(--color-heading);
       background-color: var(--color-border);
-    }
-
-    .popup {
-      opacity: 0;
-      position: absolute;
-      background-color: red;
-      border: 2px solid var(--color-border);
-      border-radius: 1rem;
-      padding: 0.5rem;
-      z-index: 1;
-      width: 20rem;
-      height: 10rem;
-      left: calc(50% - 10rem);
-      top: calc(50% - 5rem);
-      transition: all 0.5s ease-in-out;
     }
   }
 

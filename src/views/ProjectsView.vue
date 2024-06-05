@@ -106,6 +106,10 @@ watch(() => useDarkModeStore().isDark, () => {
 h2 {
   margin: 2rem 0;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 3rem;
+  }
 }
 
 .projects {

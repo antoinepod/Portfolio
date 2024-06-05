@@ -5,9 +5,9 @@ import router from '@/router';
 <template>
   <div class="not-found">
     <h1>404</h1>
-    <h3>{{ $t('404.title') }}</h3>
-    <p>{{ $t('404.message') }}</p>
-    <button @click="$router.push('/')">{{ $t('404.back-to-home') }}</button>
+    <h3>{{ $t('not-found.title') }}</h3>
+    <p>{{ $t('not-found.message') }}</p>
+    <button @click="$router.push('/')">{{ $t('not-found.back-to-home') }}</button>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ import router from '@/router';
     border: none;
     border-radius: 0.5rem;
     background-color: var(--color-heading);
-    color: var(--color-background);
+    color: var(--color-background) !important;
     margin: 1rem auto;
     cursor: pointer;
     transition: all 0.3s ease-in-out;

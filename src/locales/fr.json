@@ -5,7 +5,7 @@
   "footer": {
     "job-title": "Développeur Full-stack et Mobile"
   },
-  "404": {
+  "not-found": {
     "title": "Page non trouvée",
     "message": "Désolé, la page que vous recherchez n'existe pas.",
     "back-to-home": "Retour à l'accueil"

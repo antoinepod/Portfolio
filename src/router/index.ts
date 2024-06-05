@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import i18n from '@/i18n'
+const { t } = i18n.global
 
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
@@ -53,5 +55,13 @@ const router = createRouter({
     }
   }
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.name === 'home')
+    document.title = 'Antoine Podvin';
+  else
+    document.title = `Antoine Podvin - ${t(String(to.name) + '.title')}`;
+  next();
+});
 
 export default router

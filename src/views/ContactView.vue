@@ -110,6 +110,15 @@ const sendFormEmail = () => {
   align-items: center;
   text-align: center;
 
+  h2 {
+    margin: 2rem 0;
+
+    @media screen and (max-width: 767px) {
+      margin: unset;
+      margin-top: 2rem;
+    }
+  }
+
   .mail,
   .phone {
     margin: 2rem auto;

@@ -5,7 +5,7 @@
   "footer": {
     "job-title": "Full-stack and Mobile Developer"
   },
-  "404": {
+  "not-found": {
     "title": "Page not found",
     "message": "The page you are looking for does not exist.",
     "back-to-home": "Back to home"

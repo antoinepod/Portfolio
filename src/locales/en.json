@@ -111,7 +111,8 @@
       "title": "Technical stack",
       "description": "Here are some of the technologies and programming languages that I have experience with:"
     },
-    "cv": "View my CV"
+    "cv": "View my CV",
+    "cv-link": "/CV - Antoine Podvin (English).pdf"
   },
   "projects": {
     "title": "Projects",
@@ -202,7 +203,7 @@
         "tech": ["Java", "Android Studio", "API", "Postman"],
         "links": [
           {
-            "name": "View my internship report",
+            "name": "View my internship report (only in French)",
             "url": "/Internship - Zôdio.pdf"
           }
         ]

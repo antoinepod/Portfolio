@@ -111,7 +111,8 @@
       "title": "Stack technique",
       "description": "Voici quelques-uns des langages et des technologies que j'utilise pour mes projets :"
     },
-    "cv": "Voir mon CV"
+    "cv": "Voir mon CV",
+    "cv-link": "/CV - Antoine Podvin (Français).pdf"
   },
   "projects": {
     "title": "Projets",
@@ -137,7 +138,7 @@
         "tech": ["Vue.js 3", "TypeScript", "HTML5/CSS3", "SQL", "Jira", "Bitbucket", "Docker"],
         "links": [
           {
-            "name": "Voir mon rapport de stage",
+            "name": "Voir mon rapport de stage (en anglais)",
             "url": "/Internship - Popsell.pdf"
           }
         ]

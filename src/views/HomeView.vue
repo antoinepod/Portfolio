@@ -8,7 +8,7 @@ import AnimatedRouterLink from '@/components/AnimatedRouterLink.vue';
       <img class="photo-cv" src="@/assets/images/photo_cv.png" alt="Antoine Podvin" />
       <div class="title-text">
         <h2>{{ $t('home.presentation.title') }}</h2>
-        <h4>{{ $t('home.presentation.subtitle') }}</h4>
+        <h4 v-html="$t('home.presentation.subtitle')"></h4>
       </div>
     </div>
     <h4 class="welcome-text" v-html="$t('home.welcome-to-my-portfolio')"></h4>

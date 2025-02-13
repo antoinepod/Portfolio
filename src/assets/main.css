@@ -50,6 +50,10 @@ p {
   }
 }
 
+nowrap {
+  white-space: nowrap;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;

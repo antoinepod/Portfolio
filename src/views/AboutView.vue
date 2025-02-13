@@ -56,7 +56,7 @@ const logos = [
           <img class="photo-cv" src="/photo_cv.jpg" alt="Antoine Podvin" />
           <h2 class="title">{{ $t('about.title-full') }}</h2>
         </div>
-        <p>{{ $t('about.introduction') }}</p>
+        <p v-html="$t('about.introduction')"></p>
         <a class="button" :href="$t('about.cv-link')" target="_blank">
           <FontAwesomeIcon class="file-icon" icon="file-invoice" />
           {{ $t('about.cv') }}

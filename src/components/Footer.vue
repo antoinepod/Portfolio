@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   <hr/>
   <footer>
     <p>© 2024 - Antoine Podvin</p>
-    <p>{{ $t('footer.job-title') }}</p>
+    <p v-html="$t('footer.job-title')"></p>
     <div class="links">
       <a href="mailto:contact@antoine-podvin.fr"><FontAwesomeIcon class="icon" icon="envelope" /></a>
       <a href="tel:+33618843245"><FontAwesomeIcon class="icon" icon="phone" /></a>

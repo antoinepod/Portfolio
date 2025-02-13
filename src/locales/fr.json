@@ -3,7 +3,7 @@
     "view-more": "Voir plus"
   },
   "footer": {
-    "job-title": "Développeur Mobile et Web Full-Stack"
+    "job-title": "Développeur Mobile et Web <nowrap>Full-Stack</nowrap>"
   },
   "not-found": {
     "title": "Page non trouvée",
@@ -14,7 +14,7 @@
     "title": "Accueil",
     "presentation": {
       "title": "Hi, I'm Antoine",
-      "subtitle": "Développeur Mobile et Web Full-Stack passionné par la création et le design d'applications"
+      "subtitle": "Développeur Mobile et Web <nowrap>Full-Stack</nowrap> passionné par la création et le design d'applications"
     },
     "welcome-to-my-portfolio": "Bienvenue sur mon portfolio ! <br> Ici, vous pourrez en apprendre plus sur moi et mes projets.",
     "about-me": {
@@ -29,7 +29,7 @@
   "about": {
     "title": "À propos",
     "title-full": "À propos",
-    "introduction": "Salut ! Je m'appelle Antoine et je suis un développeur Mobile et Web Full-Stack basé à Lille, en France. Je suis actuellement étudiant en 5ème année à Epitech, où je prépare le diplôme de Software Engineer Expert. Je suis passionné par le développement et j'ai de l'expérience dans un large éventail de technologies et de langages de programmation. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer en tant que développeur.",
+    "introduction": "Salut ! Je m'appelle Antoine et je suis un développeur Mobile et Web <nowrap>Full-Stack</nowrap> basé à Lille, en France. Je suis actuellement étudiant en 5ème année à Epitech, où je prépare le diplôme de Software Engineer Expert. Je suis passionné par le développement et j'ai de l'expérience dans un large éventail de technologies et de langages de programmation. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer en tant que développeur.",
     "start-conversation": "Lancer la conversation",
     "messages": [
       {

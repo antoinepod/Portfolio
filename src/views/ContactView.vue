@@ -72,11 +72,11 @@ const sendFormEmail = () => {
       <div class="phone-buttons">
         <a href="tel:+33618843245" class="button">
           <FontAwesomeIcon class="phone-icon" icon="phone" />
-          {{ $t('contact.phone.call-me') }}
+          {{ $t('contact.phone.call') }}
         </a>
         <a href="sms:+33618843245" class="button">
           <FontAwesomeIcon class="sms-icon" icon="comment" />
-          {{ $t('contact.phone.send-sms') }}
+          {{ $t('contact.phone.sms') }}
         </a>
       </div>
     </div>
@@ -240,6 +240,7 @@ const sendFormEmail = () => {
       background-color: var(--color-background);
       color: var(--color-text);
       margin: 0.25rem;
+      min-height: 2.25rem;
     }
 
     button {

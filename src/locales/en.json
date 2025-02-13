@@ -3,7 +3,7 @@
     "view-more": "View more"
   },
   "footer": {
-    "job-title": "Full-stack and Mobile Developer"
+    "job-title": "Mobile and Web Full-Stack Developer"
   },
   "not-found": {
     "title": "Page not found",
@@ -14,7 +14,7 @@
     "title": "Home",
     "presentation": {
       "title": "Hi, I'm Antoine",
-      "subtitle": "Full-stack and Mobile Developer with a passion for creating and designing applications"
+      "subtitle": "Mobile and Web Full-Stack Developer with a passion for creating and designing applications"
     },
     "welcome-to-my-portfolio": "Welcome to my portfolio! <br> Here you will be able to learn more about me and my projects.",
     "about-me": {
@@ -29,7 +29,7 @@
   "about": {
     "title": "About",
     "title-full": "About me",
-    "introduction": "Hi! My name is Antoine and I am a Full-stack and Mobile Developer based in Lille, France. I am currently a 5th year student at Epitech, where I am preparing to graduate as a Software Engineer Expert. I am passionate about software development and I have experience in a wide range of technologies and programming languages. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+    "introduction": "Hi! My name is Antoine and I am a Mobile and Web Full-Stack developer based in Lille, France. I am currently a 5th year student at Epitech, where I am preparing to graduate as a Software Engineer Expert. I am passionate about software development and I have experience in a wide range of technologies and programming languages. I am always looking for new challenges and opportunities to learn and grow as a developer.",
     "start-conversation": "Start the discussion",
     "messages": [
       {
@@ -85,7 +85,7 @@
         "from": "me"
       },
       {
-        "content": "Do you have any hobbies appart from coding?",
+        "content": "Do you have any hobbies apart from coding?",
         "from": "user"
       },
       {
@@ -108,7 +108,7 @@
     "type-your-message": "Type your message...",
     "mail-subject": "Contact via antoine-podvin.fr",
     "tech-stack": {
-      "title": "Technical stack",
+      "title": "Tech Stack",
       "description": "Here are some of the technologies and programming languages that I have experience with:"
     },
     "cv": "View my CV",
@@ -197,7 +197,7 @@
       },
       {
         "title": "Zôdio",
-        "description": "Zôdio is a retail chain specializing in home decoration and creative hobbies. I completed my second-year internship at Zôdio, where I worked on developing a mobile application for store employees. I was able to make updates to the application, fix bugs, and add new features such as support for electronic shelf labels in stores. This required me to contact the company that supplied these labels to obtain their API documentation and integrate it into the application.",
+        "description": "Zôdio is a retail chain specializing in home decoration and creative hobbies. I completed my second-year internship at Zôdio, where I worked on developing a mobile application for store employees. I was able to make updates to the application, fix bugs, and add new features such as support for electronic shelf labels in stores. This required me to contact the company that supplied these labels to obtain their API documentation and integrate it to the application.",
         "details": ["Agile methodology", "Updates of a mobile application", "Use of an external API", "Integration of new features", "Customer relationship", "Documentation"],
         "tags": ["Mobile", "Back-end"],
         "tech": ["Java", "Android Studio", "API", "Postman"],
@@ -229,8 +229,8 @@
     "phone": {
       "title": "By phone",
       "description": "If you prefer to contact me by phone, you can reach me at the following number:",
-      "call-me": "Call",
-      "send-sms": "SMS"
+      "call": "Call",
+      "sms": "SMS"
     },
     "socials": {
       "title": "Social networks",

@@ -3,7 +3,7 @@
     "view-more": "Voir plus"
   },
   "footer": {
-    "job-title": "Développeur Full-stack et Mobile"
+    "job-title": "Développeur Mobile et Web Full-Stack"
   },
   "not-found": {
     "title": "Page non trouvée",
@@ -14,7 +14,7 @@
     "title": "Accueil",
     "presentation": {
       "title": "Hi, I'm Antoine",
-      "subtitle": "Développeur Full-stack et Mobile passionné par la création et le design d'applications"
+      "subtitle": "Développeur Mobile et Web Full-Stack passionné par la création et le design d'applications"
     },
     "welcome-to-my-portfolio": "Bienvenue sur mon portfolio ! <br> Ici, vous pourrez en apprendre plus sur moi et mes projets.",
     "about-me": {
@@ -29,7 +29,7 @@
   "about": {
     "title": "À propos",
     "title-full": "À propos",
-    "introduction": "Salut ! Je m'appelle Antoine et je suis un développeur Full-stack et Mobile basé à Lille, en France. Je suis actuellement étudiant en 5ème année à Epitech, où je prépare le diplôme de Software Engineer Expert. Je suis passionné par le développement et j'ai de l'expérience dans un large éventail de technologies et de langages de programmation. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer en tant que développeur.",
+    "introduction": "Salut ! Je m'appelle Antoine et je suis un développeur Mobile et Web Full-Stack basé à Lille, en France. Je suis actuellement étudiant en 5ème année à Epitech, où je prépare le diplôme de Software Engineer Expert. Je suis passionné par le développement et j'ai de l'expérience dans un large éventail de technologies et de langages de programmation. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et évoluer en tant que développeur.",
     "start-conversation": "Lancer la conversation",
     "messages": [
       {
@@ -108,7 +108,7 @@
     "type-your-message": "Tapez votre message...",
     "mail-subject": "Contact depuis antoine-podvin.fr",
     "tech-stack": {
-      "title": "Stack technique",
+      "title": "Stack Technique",
       "description": "Voici quelques-uns des langages et des technologies que j'utilise pour mes projets :"
     },
     "cv": "Voir mon CV",
@@ -197,7 +197,7 @@
       },
       {
         "title": "Zôdio",
-        "description": "Zôdio est une enseigne de magasins spécialisée dans la décoration et les loisirs créatifs. J'ai réalisé mon stage de 2ème année chez Zôdio, où j'ai travaillé sur le développement d'une application mobile pour les employés des magasins. J'ai pu réaliser des mises à jour de l'application, corriger des bugs et ajouter de nouvelles fonctionnalités comme le support des étiquettes électroniques en magasins. J'ai donc du contacter l'enrtreprise qui fournissait ces étiquettes pour obtenir la documentation de leur API et l'intégrer à l'application.",
+        "description": "Zôdio est une enseigne de magasins spécialisée dans la décoration et les loisirs créatifs. J'ai réalisé mon stage de 2ème année chez Zôdio, où j'ai travaillé sur le développement d'une application mobile pour les employés des magasins. J'ai pu réaliser des mises à jour de l'application, corriger des bugs et ajouter de nouvelles fonctionnalités comme le support des étiquettes électroniques en magasins. J'ai donc dû contacter l'entreprise qui fournissait ces étiquettes pour obtenir la documentation de leur API afin de l'intégrer à l'application.",
         "details": ["Méthode Agile", "Mise à jour d'une application mobile", "Utilisation d'une API externe", "Intégration de nouvelles fonctionnalités", "Relation client", "Documentation"],
         "tags": ["Mobile", "Back-end"],
         "tech": ["Java", "Android Studio", "API", "Postman"],
@@ -229,8 +229,8 @@
     "phone": {
       "title": "Par téléphone",
       "description": "Si vous préférez me contacter par téléphone, vous pouvez me joindre au numéro suivant :",
-      "call-me": "Appeler",
-      "send-sms": "SMS"
+      "call": "Appeler",
+      "sms": "SMS"
     },
     "socials": {
       "title": "Réseaux sociaux",

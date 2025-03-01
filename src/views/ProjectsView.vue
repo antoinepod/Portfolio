@@ -61,7 +61,6 @@ const loadProjects = (): Array<Project> => {
       image: '',
       links: loadLinks(i)
     });
-    console.log(projects);
   }
   loadImages(projects);
   return projects;

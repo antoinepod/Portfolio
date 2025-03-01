@@ -1,25 +1,25 @@
-import { createApp, type Component, type ComponentPublicInstance } from 'vue'
+import { createApp, type ComponentPublicInstance } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
 
 import i18n from './i18n'
 import { FontAwesomeIcon } from './font-awesome'
 
 import './assets/main.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.component("font-awesome-icon", FontAwesomeIcon);
+app.component("font-awesome-icon", FontAwesomeIcon)
 app.use(createPinia())
 app.use(i18n)
 app.use(router)
 
-app.config.warnHandler = (msg: string, instance: ComponentPublicInstance | null, trace: string) =>
+app.config.warnHandler = (msg: string, _instance: ComponentPublicInstance | null, trace: string) =>
   ![
     'Extraneous non-props attributes'
   ].some((warning) => msg.includes(warning)) &&

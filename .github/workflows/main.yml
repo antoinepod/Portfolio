@@ -13,16 +13,19 @@ jobs:
       with:
         node-version: '18'
 
+    - name: 📄 Copy .env file to build output
+      if: github.ref == 'refs/heads/main'
+      run: |
+        echo "VITE_API_KEY=${{ secrets.FIREBASE_API_KEY }}" > .env
+        echo "VITE_AUTH_DOMAIN=${{ secrets.FIREBASE_AUTH_DOMAIN }}" >> .env
+        echo "VITE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}" >> .env
+        echo "VITE_STORAGE_BUCKET=${{ secrets.FIREBASE_STORAGE_BUCKET }}" >> .env
+        echo "VITE_MESSAGING_SENDER_ID=${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}" >> .env
+        echo "VITE_APP_ID=${{ secrets.FIREBASE_APP_ID }}" >> .env
+        echo "VITE_MEASUREMENT_ID=${{ secrets.FIREBASE_MEASUREMENT_ID }}" >> .env
+
     - name: 🔨 Build Project
       id: build
-      env:
-        VITE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
-        VITE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
-        VITE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-        VITE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
-        VITE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
-        VITE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
-        VITE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
       run: |
         npm ci
         npm run build

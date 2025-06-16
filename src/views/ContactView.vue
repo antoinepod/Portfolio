@@ -19,7 +19,7 @@ const copyToClipboard = (data: string) => {
 };
 
 const copyMail = () => {
-  copyToClipboard('contact@antoine-podvin.fr');
+  copyToClipboard('antoinepodvin.pro@gmail.com');
 };
 
 const copyPhone = () => {
@@ -32,7 +32,7 @@ const formSubject: Ref<HTMLInputElement | null> = ref(null);
 const formMessage: Ref<HTMLTextAreaElement | null> = ref(null);
 
 const sendFormEmail = () => {
-  let url = `mailto:contact@antoine-podvin.fr?subject=${formSubject.value?.value}&body=${formName.value?.value}%20(${formEmail.value?.value})%0D%0A%0D%0A`;
+  let url = `mailto:antoinepodvin.pro@gmail.com?subject=${formSubject.value?.value}&body=${formName.value?.value}%20(${formEmail.value?.value})%0D%0A%0D%0A`;
   if (formMessage.value) {
     url += encodeURIComponent(formMessage.value.value);
   }
@@ -47,8 +47,8 @@ const sendFormEmail = () => {
       <div class="infos">
         <h4>{{ $t('contact.email.title') }}</h4>
         <p>{{ $t('contact.email.description') }}</p>
-        <p class="to-copy" @click="copyMail">contact@antoine-podvin.fr</p>
-        <a href="mailto:contact@antoine-podvin.fr" class="button">
+        <p class="to-copy" @click="copyMail">antoinepodvin.pro@gmail.com</p>
+        <a href="mailto:antoinepodvin.pro@gmail.com" class="button">
           <FontAwesomeIcon class="email-icon" icon="envelope" />
           {{ $t('contact.email.send-email') }}
         </a>

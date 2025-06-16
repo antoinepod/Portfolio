@@ -62,7 +62,7 @@ const messagesRef: Ref<Array<HTMLElement> | null> = ref(null);
 const sendMessageRef: Ref<HTMLInputElement | null> = ref(null);
 
 const sendMessage = () => {
-  let url = `mailto:contact@antoine-podvin.fr?subject=${t('about.mail-subject')}`;
+  let url = `mailto:antoinepodvin.pro@gmail.com?subject=${t('about.mail-subject')}`;
   if (sendMessageRef.value) {
     url += "&body=" + encodeURIComponent(sendMessageRef.value.value);
   }

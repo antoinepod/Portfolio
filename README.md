@@ -1,6 +1,6 @@
 # Welcome to my Portfolio repository!
 [![GitHub Action workflow](https://github.com/antoinepod/Portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/antoinepod/Portfolio/actions/workflows/main.yml)
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=antoine-podvin.fr&up_color=green&up_message=online&url=https%3A%2F%2Fantoine-podvin.fr)](https://antoine-podvin.fr)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=antoine-podvin.vercel.app&up_color=green&up_message=online&url=https%3A%2F%2Fantoine-podvin.vercel.app)](https://antoine-podvin.vercel.app)
 
 ## Description
 
@@ -23,7 +23,7 @@ The project is hosted on OVH Cloud.
 
 The deployment is automated using GitHub Actions, the website is built and deployed to the server on each push to the `main` branch.
 
-You can access it at the following URL: [antoine-podvin.fr](https://antoine-podvin.fr)
+You can access it at the following URL: [antoine-podvin.vercel.app](https://antoine-podvin.vercel.app)
 
 ## Installation
 
@@ -47,4 +47,4 @@ npm run dev
 
 [![GitHub](https://img.shields.io/badge/antoinepod-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/antoinepod)
 [![LinkedIn](https://img.shields.io/badge/antoine--podvin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/antoine-podvin/)
-[![Mail](https://img.shields.io/badge/contact@antoine--podvin.fr-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@antoine-podvin.fr)
+[![Mail](https://img.shields.io/badge/antoinepodvin.pro@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:antoinepodvin.pro@gmail.com)

@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+
+import { Analytics } from '@vercel/analytics/vue';
+
 import Header from '@/components/Header.vue'
 import Footer from './components/Footer.vue';
 </script>
 
 <template>
+  <Analytics />
   <div class="main-container">
     <Header class="header"></Header>
     <div class="router-view-container">

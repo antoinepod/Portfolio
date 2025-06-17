@@ -36,7 +36,9 @@ jobs:
 
     - name: 🚀 Deploy to FTP server
       id: ftp-deploy
-      if: github.ref == 'refs/heads/main'
+      # Temporarily disabled deployment to FTP server (because domain has not been renewed yet)
+      # Remove the `&& false` condition to re-enable deployment
+      if: github.ref == 'refs/heads/main' && false
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_URL }}

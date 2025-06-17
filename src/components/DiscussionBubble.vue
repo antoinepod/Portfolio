@@ -93,8 +93,7 @@ const discussion: Ref<HTMLElement | null> = ref(null);
 .discussion-container {
   outline: 2px solid var(--color-border);
   border-radius: 1rem;
-  padding: 0.5rem;
-  padding-right: 0rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   position: relative;
 
   &.disabled *:not(button) {
@@ -110,6 +109,7 @@ const discussion: Ref<HTMLElement | null> = ref(null);
     overflow-y: scroll;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
+    padding-right: 0.5rem;
 
     &>.bubble {
       border-radius: 1rem;
